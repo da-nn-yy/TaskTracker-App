@@ -8,14 +8,14 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const handleGoogleSignin = async () => {
+  const signinWithGoogle = async () => {
     const result = await signInWithPopup(auth, provider);
-    console.log(result);
+    console.log(result.user);
     navigate("/")
   }
   return (
     <div>
-      <button onClick={handleGoogleSignin()}>Sign in with Google</button>
+      <button onClick={signinWithGoogle}>Sign in with Google</button>
     </div>
   )
 }
