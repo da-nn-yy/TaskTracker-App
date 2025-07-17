@@ -47,7 +47,7 @@ const Tasks = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white py-4 px-2 sm:py-8 sm:px-4 md:px-16">
+    <div className="container min-h-screen bg-[#eaf4f4] py-8 px-4 sm:px-8 md:px-12 my-4">
       <AddTaskModal
         open={showModal}
         onClose={() => setShowModal(false)}
