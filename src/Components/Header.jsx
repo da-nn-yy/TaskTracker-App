@@ -21,14 +21,9 @@ const Header = () => {
         <a href="#" className="text-black font-semibold hover:text-[#aff901] transition-colors">Filters</a>
         <a href="#" className="rounded-full bg-[#aff901] text-black px-5 py-2 font-semibold hover:opacity-90 transition-opacity">Add Task</a>
       </nav>
-      {/* Mobile Drawer Nav & Overlay */}
+
       {menuOpen && (
         <>
-          {/* Blur overlay for the rest of the page */}
-          <div
-            className="fixed inset-0 backdrop-blur-md z-40"
-            onClick={() => setMenuOpen(false)}
-          />
           {/* Drawer Nav */}
           <div className="fixed top-0 left-0 right-0 z-50 flex flex-col">
             <div className="flex justify-end p-4">
