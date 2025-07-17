@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react";
 
-const AddTaskModal = ({ open, onClose, mode = "add", initialTask, onSave }) => {
+const AddTaskModal = ({ open, onClose, mode = "add", initialTask, onSave, showEndingDate }) => {
   const [title, setTitle] = useState("");
-  const [status, setStatus] = useState("In Progress");
+  const [startingAt, setStartingAt] = useState("");
+  const [endingAt, setEndingAt] = useState("");
 
   useEffect(() => {
     if (mode === "edit" && initialTask) {
       setTitle(initialTask.title);
-      setStatus(initialTask.status);
+      setStartingAt(initialTask.startingAt ? initialTask.startingAt.split('T')[0] : "");
+      setEndingAt(initialTask.endingAt ? initialTask.endingAt.split('T')[0] : "");
     } else {
       setTitle("");
-      setStatus("In Progress");
+      setStartingAt("");
+      setEndingAt("");
     }
   }, [mode, initialTask, open]);
 
@@ -20,8 +23,8 @@ const AddTaskModal = ({ open, onClose, mode = "add", initialTask, onSave }) => {
     e.preventDefault();
     if (!title.trim()) return;
     const task = mode === "edit"
-      ? { ...initialTask, title, status }
-      : { title, status };
+      ? { ...initialTask, title, startingAt: startingAt ? new Date(startingAt).toISOString() : null, endingAt: endingAt ? new Date(endingAt).toISOString() : null }
+      : { title, status: "In Progress", startingAt: startingAt ? new Date(startingAt).toISOString() : null, endingAt: endingAt ? new Date(endingAt).toISOString() : null };
     onSave(task);
   };
 
@@ -38,15 +41,24 @@ const AddTaskModal = ({ open, onClose, mode = "add", initialTask, onSave }) => {
             onChange={e => setTitle(e.target.value)}
             autoFocus
           />
-          <select
-            className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"
-            value={status}
-            onChange={e => setStatus(e.target.value)}
-          >
-            <option>In Progress</option>
-            <option>Completed</option>
-            <option>Pending</option>
-          </select>
+          {showEndingDate && (
+            <>
+              <input
+                type="date"
+                className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"
+                value={startingAt}
+                onChange={e => setStartingAt(e.target.value)}
+                placeholder="Start Date"
+              />
+              <input
+                type="date"
+                className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"
+                value={endingAt}
+                onChange={e => setEndingAt(e.target.value)}
+                placeholder="End Date"
+              />
+            </>
+          )}
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-2">
             <button type="submit" className="flex-1 py-2 sm:py-3 rounded-full bg-[#aff901] text-black font-bold hover:opacity-90 transition">{mode === "edit" ? "Save Changes" : "Add Task"}</button>
             <button type="button" className="flex-1 py-2 sm:py-3 rounded-full bg-black text-[#aff901] font-bold hover:opacity-80 transition" onClick={onClose}>Cancel</button>
