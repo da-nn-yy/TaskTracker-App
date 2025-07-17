@@ -29,11 +29,13 @@ const AddTaskModal = ({ open, onClose, mode = "add", initialTask, onSave, showEn
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 px-2">
+    <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 px-4 sm:px-8 md:px-12">
       <div className="bg-white rounded-2xl p-4 sm:p-8 w-full max-w-xs sm:max-w-md shadow-xl flex flex-col gap-4 sm:gap-6">
         <h2 className="text-xl sm:text-2xl font-bold text-black">{mode === "edit" ? "Edit Task" : "Add New Task"}</h2>
         <form className="flex flex-col gap-3 sm:gap-4" onSubmit={handleSubmit}>
+          <label className="text-black font-semibold mb-1" htmlFor="task-title">Task Title</label>
           <input
+            id="task-title"
             type="text"
             placeholder="Task Title"
             className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"
@@ -43,14 +45,18 @@ const AddTaskModal = ({ open, onClose, mode = "add", initialTask, onSave, showEn
           />
           {showEndingDate && (
             <>
+              <label className="text-black font-semibold mb-1" htmlFor="start-date">Start Date</label>
               <input
+                id="start-date"
                 type="date"
                 className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"
                 value={startingAt}
                 onChange={e => setStartingAt(e.target.value)}
                 placeholder="Start Date"
               />
+              <label className="text-black font-semibold mb-1" htmlFor="end-date">End Date</label>
               <input
+                id="end-date"
                 type="date"
                 className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"
                 value={endingAt}
