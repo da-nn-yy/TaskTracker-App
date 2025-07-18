@@ -1,12 +1,70 @@
-# React + Vite
+# Task Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Task Tracker web app built with React, Tailwind CSS, Firebase Authentication, and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add, edit, and delete tasks
+- Track task start and end dates
+- Automatic status (In Progress/Completed) based on end date
+- Google Sign-In authentication (Firebase)
+- Responsive, modern UI with custom color palette (#aff901, #eaf4f4, black)
+- User profile display and logout
+- Accessible and mobile-friendly
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Task Tracker Demo](demo-screenshot.png)
+
+## Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/task-tracker-app.git
+cd task-tracker-app
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Set up Firebase
+- Go to [Firebase Console](https://console.firebase.google.com/)
+- Create a new project (or use an existing one)
+- Enable Google Sign-In in Authentication > Sign-in method
+- Copy your Firebase config and add it to a `.env` file in the project root:
+
+```
+VITE_FIREBASE_API_KEY=your_api_key_here
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain_here
+VITE_FIREBASE_PROJECT_ID=your_project_id_here
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket_here
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id_here
+VITE_FIREBASE_APP_ID=your_app_id_here
+VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id_here
+```
+
+### 4. Start the development server
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app.
+
+## Usage
+- Click **Login** to sign in with Google.
+- Add tasks with a title, start date, and end date.
+- Edit or delete tasks as needed.
+- Status is set automatically based on the end date.
+- Log out from the nav bar when finished.
+
+## Tech Stack
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Firebase Authentication](https://firebase.google.com/docs/auth)
+
+## License
+
+MIT
