@@ -12,9 +12,13 @@ A modern, responsive Task Tracker web app built with React, Tailwind CSS, Fireba
 - User profile display and logout
 - Accessible and mobile-friendly
 
-## Demo
+## Screenshots
 
-![Task Tracker Demo](demo-screenshot.png)
+<p align="center">
+  <img src="screenshot1.png" alt="Dashboard" width="300"/>
+  <img src="screenshot2.png" alt="Tasks" width="300"/>
+  <img src="screenshot3.png" alt="Add Task" width="300"/>
+</p>
 
 ## Getting Started
 
