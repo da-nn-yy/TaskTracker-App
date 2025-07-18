@@ -21,7 +21,7 @@ A modern, responsive Task Tracker web app built with React, Tailwind CSS, Fireba
 </p>
 
 ## Usage
-- Click **Login** to sign in with Google.
+- Click **Login** to sign in with Google or built in Auth.
 - Add tasks with a title, start date, and end date.
 - Edit or delete tasks as needed.
 - Status is set automatically based on the end date.
