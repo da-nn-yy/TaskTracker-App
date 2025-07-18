@@ -71,14 +71,13 @@ const Header = () => {
       {/* Mobile Drawer Nav & Overlay */}
       {menuOpen && (
         <>
-          <div className="fixed inset-0 backdrop-blur-md z-40" onClick={() => setMenuOpen(false)} />
-          <div className="fixed top-0 left-0 right-0 z-50 flex flex-col">
-            <div className="flex justify-end p-4">
-              <button onClick={() => setMenuOpen(false)} className="text-black p-4 rounded-full focus:outline-none focus:ring-2 focus:ring-[#aff901] active:bg-gray-100 transition w-14 h-14 flex items-center justify-center">
+          <div className="fixed top-0 left-0 right-0 z-50 flex flex-col px-4">
+            <nav className="border-2 border-[#aff901] flex flex-col items-center justify-start bg-[#eaf4f4] flex-1 py-10 rounded-xl gap-8 w-full shadow-xl">
+            <div className="flex justify-end relative -top-5 right-5  w-full ">
+              <button onClick={() => setMenuOpen(false)} className="text-black p-3 rounded-full focus:outline-none focus:ring-2 focus:ring-[#aff901] active:bg-gray-100 transition w-14 h-14 flex items-center justify-center">
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
               </button>
             </div>
-            <nav className="flex flex-col items-center justify-start bg-[#eaf4f4] flex-1 py-10 rounded-xl gap-8 w-full shadow-xl">
               {navLinks.map(link => (
                 <Link
                   key={link.to}
