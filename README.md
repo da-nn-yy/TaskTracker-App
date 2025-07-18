@@ -15,9 +15,9 @@ A modern, responsive Task Tracker web app built with React, Tailwind CSS, Fireba
 ## Screenshots
 
 <p align="center">
-  <img src="./public/Screenshot 2025-07-18 120843.png" alt="Dashboard" width="300"/>
+  <img src="./public/Screenshot 2025-07-18 120843.png" alt="Dashboard" width="200"/>
   <img src="./public/Screenshot 2025-07-18 120937.png" alt="Tasks" width="300"/>
-  <img src="./public/Screenshot 2025-07-18 121032.png" alt="Add Task" width="300"/>
+  <img src="./public/Screenshot 2025-07-18 121032.png" alt="Add Task" width="600"/>
 </p>
 
 ## Usage
