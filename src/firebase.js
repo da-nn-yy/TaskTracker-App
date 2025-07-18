@@ -1,19 +1,18 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth ,GoogleAuthProvider} from "firebase/auth";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Your web app's Firebase configuration (from environment variables)
 const firebaseConfig = {
-  apiKey: "AIzaSyBfF17SkUQr5Ukea-NYipLKZVMc0lgOO_E",
-  authDomain: "tasktrackerapp-79186.firebaseapp.com",
-  projectId: "tasktrackerapp-79186",
-  storageBucket: "tasktrackerapp-79186.firebasestorage.app",
-  messagingSenderId: "188547322744",
-  appId: "1:188547322744:web:ac1e4b5219dc4faab5ee8d",
-  measurementId: "G-ED52SHR13S"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
