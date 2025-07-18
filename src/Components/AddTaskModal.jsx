@@ -30,6 +30,11 @@ const AddTaskModal = ({ open, onClose, mode = "add", initialTask, onSave, showEn
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 px-4 sm:px-8 md:px-12">
+      <div>
+        <div className="bg-[#aff901] h-70 w-70 rounded-full absolute -z-1 blur-[90px] animate-pulse max-md:hidden top-20 -left-30"/>
+        <div className="bg-[#aff901] h-70 w-70 rounded-full absolute -z-1 blur-[90px] animate-pulse max-md:hidden top-60 -right-[150px]"/>
+        <div className="bg-[#aff901] h-70 w-70 rounded-full absolute -z-1 blur-[90px] animate-pulse max-md:hidden -bottom-50 left-[300px]"/>
+      </div>
       <div className="bg-white rounded-2xl p-4 sm:p-8 w-full max-w-xs sm:max-w-md shadow-xl flex flex-col gap-4 sm:gap-6">
         <h2 className="text-xl sm:text-2xl font-bold text-black">{mode === "edit" ? "Edit Task" : "Add New Task"}</h2>
         <form className="flex flex-col gap-3 sm:gap-4" onSubmit={handleSubmit}>
