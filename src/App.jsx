@@ -3,7 +3,7 @@ import Header from "./Components/Header.jsx";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from "./Pages/login.jsx";
 import Dashboard from "./Pages/main/Dashboard.jsx";
-import Tasks from "./Pages/Tasks.jsx";
+import Tasks from "./Pages/main/Tasks.jsx";
 function App() {
 
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import TaskCard from "../Components/TaskCard.jsx";
-import AddTaskModal from "../Components/AddTaskModal.jsx";
+import TaskCard from "../../Components/TaskCard.jsx";
+import AddTaskModal from "../../Components/AddTaskModal.jsx";
 import { FiPlus } from "react-icons/fi";
 
 const initialTasks = [
