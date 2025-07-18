@@ -1,4 +1,4 @@
-# Task Tracker App
+# Task Tracker App 
 
 A modern, responsive Task Tracker web app built with React, Tailwind CSS, Firebase Authentication, and Vite.
 But it not fully functional.
