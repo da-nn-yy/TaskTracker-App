@@ -1,15 +1,31 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { auth } from "../firebase.js";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [user, setUser] = useState(null);
   const location = useLocation();
+  const navigate = useNavigate();
   const navLinks = [
     { to: "/", label: "Dashboard" },
     { to: "/tasks", label: "Tasks" },
   ];
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((u) => setUser(u));
+    return () => unsubscribe();
+  }, []);
+
+  const avatar = user?.photoURL || "https://ui-avatars.com/api/?name=" + (user?.displayName || "U") + "&background=aff901&color=000";
+
+  const handleLogout = async () => {
+    await auth.signOut();
+    navigate("/");
+  };
+
   return (
-    <header className="container bg-white drop-shadow-md rounded-full py-4 px-4 sm:py-5 sm:px-8 flex flex-col sm:flex-row items-center sm:justify-between mt-4 sm:mt-6 relative z-50">
+    <header className="container bg-[#eaf4f4] drop-shadow-md rounded-full py-4 px-4 sm:py-5 sm:px-8 flex flex-col sm:flex-row items-center sm:justify-between mt-4 sm:mt-6 relative z-50">
       <div className="flex items-center justify-between w-full sm:w-auto">
         <span className="text-2xl sm:text-3xl font-extrabold text-black tracking-wide" style={{ fontFamily: 'agbalumo' }}>
           Task <span className="text-[#aff901]">Tracker</span>
@@ -32,12 +48,25 @@ const Header = () => {
             {link.label}
           </Link>
         ))}
-        <Link
-          to="/login"
-          className="rounded-full bg-[#aff901] text-black px-5 py-2 font-semibold hover:opacity-90 transition-opacity ml-4"
-        >
-          Login
-        </Link>
+        {user ? (
+          <div className="flex items-center gap-3 ml-4">
+            <img src={avatar} alt="profile" className="w-9 h-9 rounded-full border-2 border-[#aff901] object-cover" />
+            <span className="text-black font-semibold max-w-[120px] truncate">{user.displayName || user.email}</span>
+            <button
+              onClick={handleLogout}
+              className="rounded-full bg-black text-[#aff901] px-4 py-2 font-semibold ml-2 hover:bg-[#aff901] hover:text-black border border-[#aff901] transition-colors"
+            >
+              Log Out
+            </button>
+          </div>
+        ) : (
+          <Link
+            to="/login"
+            className="rounded-full bg-[#aff901] text-black px-5 py-2 font-semibold hover:opacity-90 transition-opacity ml-4"
+          >
+            Login
+          </Link>
+        )}
       </nav>
       {/* Mobile Drawer Nav & Overlay */}
       {menuOpen && (
@@ -60,13 +89,26 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                to="/login"
-                className="rounded-full bg-[#aff901] text-black px-8 py-3 font-semibold text-xl hover:opacity-90 transition-opacity"
-                onClick={() => setMenuOpen(false)}
-              >
-                Login
-              </Link>
+              {user ? (
+                <div className="flex flex-col items-center gap-2 mt-8">
+                  <img src={avatar} alt="profile" className="w-16 h-16 rounded-full border-2 border-[#aff901] object-cover" />
+                  <span className="text-black font-semibold max-w-[120px] truncate">{user.displayName || user.email}</span>
+                  <button
+                    onClick={() => { setMenuOpen(false); handleLogout(); }}
+                    className="rounded-full bg-black text-[#aff901] px-6 py-2 font-semibold mt-2 hover:bg-[#aff901] hover:text-black border border-[#aff901] transition-colors"
+                  >
+                    Log Out
+                  </button>
+                </div>
+              ) : (
+                <Link
+                  to="/login"
+                  className="rounded-full bg-[#aff901] text-black px-8 py-3 font-semibold text-xl hover:opacity-90 transition-opacity mt-8"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Login
+                </Link>
+              )}
             </nav>
           </div>
         </>
