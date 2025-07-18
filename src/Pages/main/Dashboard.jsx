@@ -53,7 +53,14 @@ const Dashboard = () => {
       : tasks.filter((t) => t.status === filter);
 
   return (
-    <div className="container min-h-screen bg-[#eaf4f4] py-8 px-4 sm:px-8 md:px-12 my-4">
+    <div className="min-h-screen  py-8 px-4 sm:px-8 md:px-12 my-4">
+      <div className="-z-1">
+        <div className="bg-[#aff901] h-70 w-70 rounded-full absolute -z-1 blur-[90px] animate-pulse max-md:hidden top-20 -left-30"/>
+        <div className="bg-[#aff901] h-70 w-70 rounded-full absolute -z-1 blur-[90px] animate-pulse max-md:hidden top-60 -right-[150px]"/>
+        <div className="bg-[#aff901] h-70 w-70 rounded-full absolute -z-1 blur-[90px] animate-pulse max-md:hidden -bottom-50 left-[300px]"/>
+      </div>
+      <div className="container">
+
       <AddTaskModal
         open={showModal}
         onClose={() => setShowModal(false)}
@@ -83,6 +90,7 @@ const Dashboard = () => {
         {filteredTasks.length === 0 && (
           <div className="col-span-full text-center text-gray-400 py-12 text-lg">No tasks found.</div>
         )}
+      </div>
       </div>
     </div>
   );
