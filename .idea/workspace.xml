@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Restructure project directory by moving frontend files to root level" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;da-nn-yy&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:da-nn-yy/TaskTracker-App.git&quot;,
+    &quot;accountId&quot;: &quot;ee2e0ff2-3912-4423-8c2c-904e94eac788&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2zwjwfcKCDFO5Ty9f6IuZNYdYKY" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.localhost:5173.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app\frontend" />
+      <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app\src\Pages\main" />
+      <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app\src\Components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.localhost:5173">
+    <configuration name="localhost:5173" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:5173/">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.localhost:5173" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="" />
+      <created>1752649270578</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752649270578</updated>
+      <workItem from="1752649271938" duration="1374000" />
+      <workItem from="1752650734564" duration="68000" />
+      <workItem from="1752650930375" duration="12732000" />
+      <workItem from="1752671671119" duration="683000" />
+      <workItem from="1752672579262" duration="841000" />
+      <workItem from="1752690761009" duration="612000" />
+      <workItem from="1752765629989" duration="3931000" />
+      <workItem from="1752777723929" duration="6464000" />
+      <workItem from="1752786958690" duration="3120000" />
+      <workItem from="1752790845088" duration="1743000" />
+      <workItem from="1752820453200" duration="14840000" />
+      <workItem from="1752843821942" duration="254000" />
+      <workItem from="1752844094796" duration="1308000" />
+      <workItem from="1752846207234" duration="37000" />
+      <workItem from="1752846843009" duration="3000" />
+      <workItem from="1753050895115" duration="1347000" />
+      <workItem from="1753434255296" duration="646000" />
+    </task>
+    <task id="LOCAL-00007" summary="Add Google authentication login page with Firebase integration">
+      <option name="closed" value="true" />
+      <created>1752657762426</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752657762426</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add react-firebase-hooks and react-router-dom dependencies">
+      <option name="closed" value="true" />
+      <created>1752657772248</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1752657772248</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add React Router routing configuration with basic page structure">
+      <option name="closed" value="true" />
+      <created>1752670592869</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1752670592869</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix authentication import and add user profile display with sign out functionality">
+      <option name="closed" value="true" />
+      <created>1752670604573</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1752670604573</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add root element styling with Poppins font and center alignment">
+      <option name="closed" value="true" />
+      <created>1752670614908</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1752670614908</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix Google sign-in button click handler and improve user logging">
+      <option name="closed" value="true" />
+      <created>1752670623892</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1752670623892</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add Dashboard component and update home route to display Dashboard instead of placeholder">
+      <option name="closed" value="true" />
+      <created>1752767188622</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1752767188622</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Refactor Header component to responsive design with mobile drawer navigation">
+      <option name="closed" value="true" />
+      <created>1752767204421</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1752767204421</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Replace Google authentication with demo login form UI">
+      <option name="closed" value="true" />
+      <created>1752767243027</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1752767243027</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add Dashboard, TaskCard, FilterBar, and AddTaskModal components with responsive design">
+      <option name="closed" value="true" />
+      <created>1752768191019</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1752768191019</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add Dashboard, TaskCard, FilterBar components and enhance Header with mobile drawer navigation">
+      <option name="closed" value="true" />
+      <created>1752768219727</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1752768219727</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add TaskCard and FilterBar components; enhance Header with mobile drawer navigation and blur overlay">
+      <option name="closed" value="true" />
+      <created>1752768480099</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1752768480099</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add TaskCard component and enhance Header with blur overlay for mobile navigation">
+      <option name="closed" value="true" />
+      <created>1752768500366</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1752768500366</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Improve mobile navigation UX with enhanced drawer overlay and close button styling">
+      <option name="closed" value="true" />
+      <created>1752768512803</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1752768512803</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Enhance AddTaskModal with edit mode support and form validation">
+      <option name="closed" value="true" />
+      <created>1752777757672</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1752777757672</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Implement task management functionality with add, edit, delete, and filter operations">
+      <option name="closed" value="true" />
+      <created>1752777772026</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1752777772026</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Refactor FilterBar component to support dynamic filtering with active state management">
+      <option name="closed" value="true" />
+      <created>1752777783174</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1752777783174</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Remove blur overlay from mobile navigation drawer">
+      <option name="closed" value="true" />
+      <created>1752777793631</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1752777793631</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add react-icons dependency for icon components">
+      <option name="closed" value="true" />
+      <created>1752779189101</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1752779189101</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fix formatting and add trailing newline to index.css">
+      <option name="closed" value="true" />
+      <created>1752781038786</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1752781038786</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add Tasks page route and import to App component">
+      <option name="closed" value="true" />
+      <created>1752781081243</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1752781081243</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add date fields and enhanced task card functionality with icons and formatting">
+      <option name="closed" value="true" />
+      <created>1752781133052</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1752781133052</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Replace hardcoded navigation links with React Router Link components and add active state highlighting">
+      <option name="closed" value="true" />
+      <created>1752781359780</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1752781359780</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Improve AddTaskModal accessibility and responsive design with form labels and enhanced padding">
+      <option name="closed" value="true" />
+      <created>1752783325893</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1752783325893</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Fix Router component formatting and add trailing space">
+      <option name="closed" value="true" />
+      <created>1752794475625</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1752794475625</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Update page layouts with consistent container styling and remove Add Task button from Dashboard">
+      <option name="closed" value="true" />
+      <created>1752794495182</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1752794495182</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Update Header and TaskCard styling with container layout, font changes, and enhanced accessibility">
+      <option name="closed" value="true" />
+      <created>1752794529879</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1752794529879</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Update global styles with body background color and responsive container utility">
+      <option name="closed" value="true" />
+      <created>1752794545230</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1752794545230</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add Google authentication integration and animated background to Login page">
+      <option name="closed" value="true" />
+      <created>1752824387554</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1752824387554</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Add animated background elements to Tasks page layout">
+      <option name="closed" value="true" />
+      <created>1752824397915</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1752824397915</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add animated background elements to AddTaskModal component">
+      <option name="closed" value="true" />
+      <created>1752824645347</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1752824645347</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add animated background elements to Dashboard page layout">
+      <option name="closed" value="true" />
+      <created>1752824659472</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1752824659472</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Move Firebase configuration to environment variables for better security">
+      <option name="closed" value="true" />
+      <created>1752830871964</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1752830871964</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Add user authentication state management and logout functionality to Header component">
+      <option name="closed" value="true" />
+      <created>1752830909596</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1752830909596</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Add comprehensive README with project overview, setup instructions, and Firebase configuration guide">
+      <option name="closed" value="true" />
+      <created>1752830973724</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1752830973724</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Update README to replace demo section with screenshots of the application">
+      <option name="closed" value="true" />
+      <created>1752831238694</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1752831238694</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Replace demo section with multiple application screenshots in README">
+      <option name="closed" value="true" />
+      <created>1752831250912</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1752831250912</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Update screenshot paths to reference public directory in README">
+      <option name="closed" value="true" />
+      <created>1752838035334</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1752838035334</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add new screenshot images to README documentation">
+      <option name="closed" value="true" />
+      <created>1752838688475</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1752838688475</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Simplify README by removing setup instructions and keeping core project information">
+      <option name="closed" value="true" />
+      <created>1752838933207</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1752838933207</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Adjust screenshot widths in README for better visual balance">
+      <option name="closed" value="true" />
+      <created>1752839184186</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1752839184186</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Update README to mention built-in authentication option alongside Google Sign-In">
+      <option name="closed" value="true" />
+      <created>1752839597638</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1752839597638</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Update vite.svg with new SVG structure and styling">
+      <option name="closed" value="true" />
+      <created>1752840709680</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1752840709680</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Refactor vite.svg to improve SVG structure and styling">
+      <option name="closed" value="true" />
+      <created>1752840879498</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1752840879498</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Fix trailing whitespace in README.md title">
+      <option name="closed" value="true" />
+      <created>1752841301311</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1752841301311</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Add Poppins font import to Google Fonts URL in index.css">
+      <option name="closed" value="true" />
+      <created>1752842135887</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1752842135887</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Reduce TaskCard hover scale effect from 110% to 105%">
+      <option name="closed" value="true" />
+      <created>1752844064660</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1752844064660</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Refactor mobile menu layout and add border styling to Header component">
+      <option name="closed" value="true" />
+      <created>1752845185919</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1752845185919</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Restructure project directory by moving frontend files to root level">
+      <option name="closed" value="true" />
+      <created>1753434917839</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1753434917840</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update page layouts with consistent container styling and remove Add Task button from Dashboard" />
+    <MESSAGE value="Fix line endings in FilterBar component" />
+    <MESSAGE value="Update Header and TaskCard styling with container layout, font changes, and enhanced accessibility" />
+    <MESSAGE value="Update global styles with body background color and responsive container utility" />
+    <MESSAGE value="Add Google authentication integration and animated background to Login page" />
+    <MESSAGE value="Add animated background elements to Tasks page layout" />
+    <MESSAGE value="Add animated background elements to AddTaskModal component" />
+    <MESSAGE value="Add animated background elements to Dashboard page layout" />
+    <MESSAGE value="Move Firebase configuration to environment variables for better security" />
+    <MESSAGE value="Add user authentication state management and logout functionality to Header component" />
+    <MESSAGE value="Add comprehensive README with project overview, setup instructions, and Firebase configuration guide" />
+    <MESSAGE value="Update README to replace demo section with screenshots of the application" />
+    <MESSAGE value="Replace demo section with multiple application screenshots in README" />
+    <MESSAGE value="Update screenshot paths to reference public directory in README" />
+    <MESSAGE value="Add new screenshot images to README documentation" />
+    <MESSAGE value="Simplify README by removing setup instructions and keeping core project information" />
+    <MESSAGE value="Adjust screenshot widths in README for better visual balance" />
+    <MESSAGE value="Update README to mention built-in authentication option alongside Google Sign-In" />
+    <MESSAGE value="Update vite.svg with new SVG structure and styling" />
+    <MESSAGE value="Refactor vite.svg to improve SVG structure and styling" />
+    <MESSAGE value="Fix trailing whitespace in README.md title" />
+    <MESSAGE value="Add Poppins font import to Google Fonts URL in index.css" />
+    <MESSAGE value="Reduce TaskCard hover scale effect from 110% to 105%" />
+    <MESSAGE value="Refactor mobile menu layout and add border styling to Header component" />
+    <MESSAGE value="Restructure project directory by moving frontend files to root level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructure project directory by moving frontend files to root level" />
+  </component>
+</project>
