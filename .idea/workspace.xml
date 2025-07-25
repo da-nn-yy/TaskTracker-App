@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Add backend dependencies and node_modules for task tracker application" />
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update IDE workspace configuration with latest commit reference">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,6 +66,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app\backend\routes" />
       <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app\frontend" />
       <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app\src\Pages\main" />
       <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app\src\Components" />
@@ -110,15 +123,10 @@
       <workItem from="1752846207234" duration="37000" />
       <workItem from="1752846843009" duration="3000" />
       <workItem from="1753050895115" duration="1347000" />
-      <workItem from="1753434255296" duration="1249000" />
-    </task>
-    <task id="LOCAL-00008" summary="Add react-firebase-hooks and react-router-dom dependencies">
-      <option name="closed" value="true" />
-      <created>1752657772248</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1752657772248</updated>
+      <workItem from="1753434255296" duration="3618000" />
+      <workItem from="1753442675737" duration="46000" />
+      <workItem from="1753442949434" duration="142000" />
+      <workItem from="1753443104218" duration="18000" />
     </task>
     <task id="LOCAL-00009" summary="Add React Router routing configuration with basic page structure">
       <option name="closed" value="true" />
@@ -504,14 +512,21 @@
       <option name="project" value="LOCAL" />
       <updated>1753435134931</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Update IDE workspace configuration with latest commit reference">
+      <option name="closed" value="true" />
+      <created>1753436013244</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1753436013244</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix line endings in FilterBar component" />
     <MESSAGE value="Update Header and TaskCard styling with container layout, font changes, and enhanced accessibility" />
     <MESSAGE value="Update global styles with body background color and responsive container utility" />
     <MESSAGE value="Add Google authentication integration and animated background to Login page" />
@@ -536,6 +551,7 @@
     <MESSAGE value="Refactor mobile menu layout and add border styling to Header component" />
     <MESSAGE value="Restructure project directory by moving frontend files to root level" />
     <MESSAGE value="Add backend dependencies and node_modules for task tracker application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add backend dependencies and node_modules for task tracker application" />
+    <MESSAGE value="Update IDE workspace configuration with latest commit reference" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update IDE workspace configuration with latest commit reference" />
   </component>
 </project>
