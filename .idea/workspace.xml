@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Restructure project directory by moving frontend files to root level" />
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Add backend dependencies and node_modules for task tracker application" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,15 +110,7 @@
       <workItem from="1752846207234" duration="37000" />
       <workItem from="1752846843009" duration="3000" />
       <workItem from="1753050895115" duration="1347000" />
-      <workItem from="1753434255296" duration="646000" />
-    </task>
-    <task id="LOCAL-00007" summary="Add Google authentication login page with Firebase integration">
-      <option name="closed" value="true" />
-      <created>1752657762426</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1752657762426</updated>
+      <workItem from="1753434255296" duration="1249000" />
     </task>
     <task id="LOCAL-00008" summary="Add react-firebase-hooks and react-router-dom dependencies">
       <option name="closed" value="true" />
@@ -504,14 +496,21 @@
       <option name="project" value="LOCAL" />
       <updated>1753434917840</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Add backend dependencies and node_modules for task tracker application">
+      <option name="closed" value="true" />
+      <created>1753435134931</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1753435134931</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update page layouts with consistent container styling and remove Add Task button from Dashboard" />
     <MESSAGE value="Fix line endings in FilterBar component" />
     <MESSAGE value="Update Header and TaskCard styling with container layout, font changes, and enhanced accessibility" />
     <MESSAGE value="Update global styles with body background color and responsive container utility" />
@@ -536,6 +535,7 @@
     <MESSAGE value="Reduce TaskCard hover scale effect from 110% to 105%" />
     <MESSAGE value="Refactor mobile menu layout and add border styling to Header component" />
     <MESSAGE value="Restructure project directory by moving frontend files to root level" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restructure project directory by moving frontend files to root level" />
+    <MESSAGE value="Add backend dependencies and node_modules for task tracker application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add backend dependencies and node_modules for task tracker application" />
   </component>
 </project>
