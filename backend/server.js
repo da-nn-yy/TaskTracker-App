@@ -1,15 +1,16 @@
-import express from 'express';
-import dotenv from 'dotenv'
-import taskRoutes from './src/routes/taskRoutes.js';
+const express = require('express');
+const dotenv = require('dotenv');
+const taskRoutes = require('./src/routes/taskRoutes');
+
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 
-app.use('/api/tasks', taskRoutes);
+app.use('/tasks', taskRoutes);
 
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
