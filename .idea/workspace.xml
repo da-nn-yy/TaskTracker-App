@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update IDE workspace configuration with latest commit reference">
-      <change afterPath="$PROJECT_DIR$/frontend/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +125,7 @@
       <workItem from="1753442949434" duration="142000" />
       <workItem from="1753443104218" duration="18000" />
       <workItem from="1753878687222" duration="657000" />
+      <workItem from="1753879358272" duration="612000" />
     </task>
     <task id="LOCAL-00009" summary="Add React Router routing configuration with basic page structure">
       <option name="closed" value="true" />
