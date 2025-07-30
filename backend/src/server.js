@@ -9,6 +9,9 @@ const app = express();
 app.use(express.json());
 
 app.use('/tasks', taskRoutes);
+app.get('/', (req, res) => {
+  res.send('✅ TaskTracker backend is live!');
+});
 
 const PORT = process.env.PORT || 3000;
 
