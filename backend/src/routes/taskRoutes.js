@@ -1,5 +1,4 @@
-// backend/src/routes/taskRoutes.js
-import { Router } from 'express';
+import express from 'express';
 import {
   createTask,
   getTasks,
@@ -8,7 +7,7 @@ import {
   deleteTask
 } from '../controllers/taskController.js';
 
-const router = Router();
+const router = express.Router();
 
 router.post('/', createTask);
 router.get('/', getTasks);
