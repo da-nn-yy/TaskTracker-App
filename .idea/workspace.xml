@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update IDE workspace configuration with latest commit reference">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update MySQL2 dependency to latest version" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -526,7 +524,6 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update global styles with body background color and responsive container utility" />
     <MESSAGE value="Add Google authentication integration and animated background to Login page" />
     <MESSAGE value="Add animated background elements to Tasks page layout" />
     <MESSAGE value="Add animated background elements to AddTaskModal component" />
@@ -551,6 +548,7 @@
     <MESSAGE value="Add backend dependencies and node_modules for task tracker application" />
     <MESSAGE value="Update IDE workspace configuration with latest commit reference" />
     <MESSAGE value="Remove commented port configuration from database connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove commented port configuration from database connection" />
+    <MESSAGE value="Update MySQL2 dependency to latest version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update MySQL2 dependency to latest version" />
   </component>
 </project>
