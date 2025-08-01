@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Fix line endings in README.md file">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Add CORS configuration to backend server for frontend integration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/controllers/taskController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/taskController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
@@ -145,15 +145,7 @@
       <workItem from="1753878687222" duration="657000" />
       <workItem from="1753879358272" duration="612000" />
       <workItem from="1754039161862" duration="1047000" />
-      <workItem from="1754049338462" duration="3491000" />
-    </task>
-    <task id="LOCAL-00015" summary="Replace Google authentication with demo login form UI">
-      <option name="closed" value="true" />
-      <created>1752767243027</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1752767243027</updated>
+      <workItem from="1754049338462" duration="4606000" />
     </task>
     <task id="LOCAL-00016" summary="Add Dashboard, TaskCard, FilterBar, and AddTaskModal components with responsive design">
       <option name="closed" value="true" />
@@ -539,14 +531,21 @@
       <option name="project" value="LOCAL" />
       <updated>1754040093582</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Add CORS configuration to backend server for frontend integration">
+      <option name="closed" value="true" />
+      <created>1754053115880</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1754053115881</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add user authentication state management and logout functionality to Header component" />
     <MESSAGE value="Add comprehensive README with project overview, setup instructions, and Firebase configuration guide" />
     <MESSAGE value="Update README to replace demo section with screenshots of the application" />
     <MESSAGE value="Replace demo section with multiple application screenshots in README" />
@@ -571,6 +570,7 @@
     <MESSAGE value="Update server response message to include API endpoint information" />
     <MESSAGE value="Update server root endpoint with HTML formatting and clickable API link" />
     <MESSAGE value="Fix line endings in README.md file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix line endings in README.md file" />
+    <MESSAGE value="Add CORS configuration to backend server for frontend integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CORS configuration to backend server for frontend integration" />
   </component>
 </project>
