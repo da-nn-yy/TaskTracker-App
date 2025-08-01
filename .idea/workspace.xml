@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update server response message to include API endpoint information">
-      <change beforePath="$PROJECT_DIR$/backend/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update server root endpoint with HTML formatting and clickable API link" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,15 +124,7 @@
       <workItem from="1753443104218" duration="18000" />
       <workItem from="1753878687222" duration="657000" />
       <workItem from="1753879358272" duration="612000" />
-      <workItem from="1754039161862" duration="358000" />
-    </task>
-    <task id="LOCAL-00012" summary="Fix Google sign-in button click handler and improve user logging">
-      <option name="closed" value="true" />
-      <created>1752670623892</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1752670623892</updated>
+      <workItem from="1754039161862" duration="742000" />
     </task>
     <task id="LOCAL-00013" summary="Add Dashboard component and update home route to display Dashboard instead of placeholder">
       <option name="closed" value="true" />
@@ -520,14 +510,21 @@
       <option name="project" value="LOCAL" />
       <updated>1754039186586</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Update server root endpoint with HTML formatting and clickable API link">
+      <option name="closed" value="true" />
+      <created>1754039893045</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1754039893045</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add animated background elements to Dashboard page layout" />
     <MESSAGE value="Move Firebase configuration to environment variables for better security" />
     <MESSAGE value="Add user authentication state management and logout functionality to Header component" />
     <MESSAGE value="Add comprehensive README with project overview, setup instructions, and Firebase configuration guide" />
@@ -552,6 +549,7 @@
     <MESSAGE value="Update README with comprehensive backend documentation and deployment details" />
     <MESSAGE value="Remove backend documentation section from README" />
     <MESSAGE value="Update server response message to include API endpoint information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update server response message to include API endpoint information" />
+    <MESSAGE value="Update server root endpoint with HTML formatting and clickable API link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update server root endpoint with HTML formatting and clickable API link" />
   </component>
 </project>
