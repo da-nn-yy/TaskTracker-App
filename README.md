@@ -54,7 +54,7 @@ The backend is deployed on [**Render**](https://render.com/), and the MySQL data
 
 ---
 
-## 📦 Deployment Links (if live)
+## 📦 Deployment Links 
 
 - 🔗 Frontend: Comingsoon
 - 🔗 Backend (Render): Commingsoon
