@@ -20,9 +20,9 @@ export const createTask = (req, res) => {
 
 // Get all tasks
 export const getTasks = (req, res) => {
-    pool.query('SELECT * FROM tasks', (error, results) => {
+    pool.query('SELECT * FROM tasks', (error, tasks ) => {
         if (error) return res.status(500).json({ error: error.message });
-        res.json(results);
+        res.json({tasks});
     });
 };
 
