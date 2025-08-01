@@ -1,19 +1,63 @@
 # Task Tracker App
 
-A modern, responsive Task Tracker web app built with React, Tailwind CSS, Firebase Authentication, and Vite.
-But it not fully functional.
+A modern, responsive Task Tracker web application built using **React**, **Tailwind CSS**, **Firebase Authentication**, and **Vite**, with a **Node.js + Express** backend and **MySQL** database.
 
-## Features
+The backend is deployed on [**Render**](https://render.com/), and the MySQL database is hosted on [**Railway**](https://railway.app/).
 
-- Add, edit, and delete tasks
-- Track task start and end dates
-- Automatic status (In Progress/Completed) based on end date
-- Google Sign-In authentication (Firebase)
-- Responsive, modern UI with custom color palette (#aff901, #eaf4f4, black)
-- User profile display and logout
-- Accessible and mobile-friendly
+> ⚠️ This project is still in progress and not yet fully functional.
 
-## Screenshots
+---
+
+## ✨ Features
+
+- ✅ Add, edit, and delete tasks
+- 📅 Track task start and end dates
+- ⚙️ Auto-set task status (`In Progress` or `Completed`) based on end date
+- 🔐 Google Sign-In (Firebase Authentication)
+- 🧠 User profile display and logout
+- 📱 Mobile-friendly and responsive layout
+- 🎨 Custom color theme: `#aff901`, `#eaf4f4`, `#000`
+- 🌐 Backend API for task management (CRUD)
+- 🗃️ MySQL database hosted on Railway
+
+---
+
+## 🖥️ Backend Details
+
+- **Tech Stack**: Node.js, Express, MySQL
+- **Deployment**: [Render](https://render.com/)
+- **Database**: Hosted on [Railway](https://railway.app/)
+- **Endpoints**:
+   - `GET /tasks` — Fetch all tasks
+   - `POST /tasks` — Create a new task
+   - `PUT /tasks/:id` — Update a task
+   - `DELETE /tasks/:id` — Delete a task
+
+---
+
+## 🔐 Authentication
+
+- **Firebase Authentication**
+- Users can sign in with Google and log out from the nav bar
+- Secure routes can be added using Firebase tokens
+
+---
+
+## ⚙️ Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Firebase Authentication](https://firebase.google.com/docs/auth)
+- [Node.js](https://nodejs.org/)
+- [Express.js](https://expressjs.com/)
+- [MySQL](https://www.mysql.com/)
+- [Railway](https://railway.app/)
+- [Render](https://render.com/)
+
+---
+
+## 🖼️ Screenshots
 
 <p align="center">
   <img src="./frontend/public/Screenshot 2025-07-18 120843.png" alt="Dashboard" width="200"/>
@@ -21,15 +65,21 @@ But it not fully functional.
   <img src="./frontend/public/Screenshot 2025-07-18 121032.png" alt="Add Task" width="600"/>
 </p>
 
-## Usage
-- Click **Login** to sign in with Google or built in Auth.
-- Add tasks with a title, start date, and end date.
-- Edit or delete tasks as needed.
-- Status is set automatically based on the end date.
-- Log out from the nav bar when finished.
+---
 
-## Tech Stack
-- [React](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Firebase Authentication](https://firebase.google.com/docs/auth)
+## 📦 Deployment Links (if live)
+
+- 🔗 Frontend: Comingsoon
+- 🔗 Backend (Render): Commingsoon
+
+---
+
+## 🧑‍💻 Author
+
+- Designed and developed by DANIEL
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
