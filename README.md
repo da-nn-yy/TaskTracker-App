@@ -22,19 +22,6 @@ The backend is deployed on [**Render**](https://render.com/), and the MySQL data
 
 ---
 
-## 🖥️ Backend Details
-
-- **Tech Stack**: Node.js, Express, MySQL
-- **Deployment**: [Render](https://render.com/)
-- **Database**: Hosted on [Railway](https://railway.app/)
-- **Endpoints**:
-   - `GET /tasks` — Fetch all tasks
-   - `POST /tasks` — Create a new task
-   - `PUT /tasks/:id` — Update a task
-   - `DELETE /tasks/:id` — Delete a task
-
----
-
 ## 🔐 Authentication
 
 - **Firebase Authentication**
