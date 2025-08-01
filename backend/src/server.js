@@ -10,7 +10,9 @@ app.use(express.json());
 
 app.use('/tasks', taskRoutes);
 app.get('/', (req, res) => {
-  res.send('✅ TaskTracker backend is live! \n 🧑‍💻 To access the API, use the /tasks endpoint.');
+  res.send(`
+✅ TaskTracker backend is live!<br> 
+ 🧑‍💻 To access the API, use <a href="https://task-tracker-app-be.onrender.com/tasks">/tasks</a> endpoint. `);
 });
 
 const PORT = process.env.PORT || 3000;
