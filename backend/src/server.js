@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use('/tasks', taskRoutes);
 app.get('/', (req, res) => {
-  res.send('✅ TaskTracker backend is live!');
+  res.send('✅ TaskTracker backend is live! \n 🧑‍💻 To access the API, use the /tasks endpoint.');
 });
 
 const PORT = process.env.PORT || 3000;

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update MySQL2 dependency to latest version">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Remove backend documentation section from README" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,22 +124,6 @@
       <workItem from="1753443104218" duration="18000" />
       <workItem from="1753878687222" duration="657000" />
       <workItem from="1753879358272" duration="612000" />
-    </task>
-    <task id="LOCAL-00009" summary="Add React Router routing configuration with basic page structure">
-      <option name="closed" value="true" />
-      <created>1752670592869</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1752670592869</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fix authentication import and add user profile display with sign out functionality">
-      <option name="closed" value="true" />
-      <created>1752670604573</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1752670604573</updated>
     </task>
     <task id="LOCAL-00011" summary="Add root element styling with Poppins font and center alignment">
       <option name="closed" value="true" />
@@ -519,15 +501,29 @@
       <option name="project" value="LOCAL" />
       <updated>1753436013244</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Update README with comprehensive backend documentation and deployment details">
+      <option name="closed" value="true" />
+      <created>1754038837792</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1754038837793</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Remove backend documentation section from README">
+      <option name="closed" value="true" />
+      <created>1754038870366</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1754038870366</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Google authentication integration and animated background to Login page" />
-    <MESSAGE value="Add animated background elements to Tasks page layout" />
     <MESSAGE value="Add animated background elements to AddTaskModal component" />
     <MESSAGE value="Add animated background elements to Dashboard page layout" />
     <MESSAGE value="Move Firebase configuration to environment variables for better security" />
@@ -548,9 +544,11 @@
     <MESSAGE value="Refactor mobile menu layout and add border styling to Header component" />
     <MESSAGE value="Restructure project directory by moving frontend files to root level" />
     <MESSAGE value="Add backend dependencies and node_modules for task tracker application" />
-    <MESSAGE value="Update IDE workspace configuration with latest commit reference" />
     <MESSAGE value="Remove commented port configuration from database connection" />
     <MESSAGE value="Update MySQL2 dependency to latest version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update MySQL2 dependency to latest version" />
+    <MESSAGE value="Update IDE workspace configuration with latest commit reference" />
+    <MESSAGE value="Update README with comprehensive backend documentation and deployment details" />
+    <MESSAGE value="Remove backend documentation section from README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove backend documentation section from README" />
   </component>
 </project>
