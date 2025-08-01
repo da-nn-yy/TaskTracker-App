@@ -12,6 +12,19 @@
             "name": "mServer",
             "database": "task_tracker",
             "username": "root"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "shuttle.proxy.rlwy.net",
+            "port": 45104,
+            "driver": "MySQL",
+            "name": "railway",
+            "database": "railway",
+            "username": "root"
         }
     ]
 }
