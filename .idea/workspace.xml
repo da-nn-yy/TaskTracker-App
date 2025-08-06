@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Fix state variable naming and add delete functionality to TaskCard component">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update IDE workspace configuration with latest commit reference and file changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/AddTaskModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/main/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/main/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Pages/main/Tasks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/main/Tasks.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,23 +151,7 @@
       <workItem from="1754459693644" duration="2724000" />
       <workItem from="1754465756818" duration="356000" />
       <workItem from="1754467424773" duration="938000" />
-      <workItem from="1754468547562" duration="7542000" />
-    </task>
-    <task id="LOCAL-00023" summary="Refactor FilterBar component to support dynamic filtering with active state management">
-      <option name="closed" value="true" />
-      <created>1752777783174</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1752777783174</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Remove blur overlay from mobile navigation drawer">
-      <option name="closed" value="true" />
-      <created>1752777793631</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1752777793631</updated>
+      <workItem from="1754468547562" duration="12720000" />
     </task>
     <task id="LOCAL-00025" summary="Add react-icons dependency for icon components">
       <option name="closed" value="true" />
@@ -544,14 +529,29 @@
       <option name="project" value="LOCAL" />
       <updated>1754471395263</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Refactor Tasks component to remove local state and integrate TaskCard with proper styling">
+      <option name="closed" value="true" />
+      <created>1754480381427</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1754480381427</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Update IDE workspace configuration with latest commit reference and file changes">
+      <option name="closed" value="true" />
+      <created>1754480402634</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1754480402634</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adjust screenshot widths in README for better visual balance" />
     <MESSAGE value="Update README to mention built-in authentication option alongside Google Sign-In" />
     <MESSAGE value="Update vite.svg with new SVG structure and styling" />
     <MESSAGE value="Refactor vite.svg to improve SVG structure and styling" />
@@ -572,10 +572,11 @@
     <MESSAGE value="Add CORS configuration to backend server for frontend integration" />
     <MESSAGE value="Add axios dependency and implement task fetching from backend API" />
     <MESSAGE value="Update getTasks response to wrap tasks array in object structure" />
-    <MESSAGE value="Update IDE workspace configuration with latest commit reference and file changes" />
     <MESSAGE value="Add Prettier configuration for automatic code formatting" />
     <MESSAGE value="Remove task fetching logic from App component and clean up imports" />
     <MESSAGE value="Fix state variable naming and add delete functionality to TaskCard component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix state variable naming and add delete functionality to TaskCard component" />
+    <MESSAGE value="Refactor Tasks component to remove local state and integrate TaskCard with proper styling" />
+    <MESSAGE value="Update IDE workspace configuration with latest commit reference and file changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update IDE workspace configuration with latest commit reference and file changes" />
   </component>
 </project>
