@@ -3,22 +3,7 @@ import TaskCard from "../../Components/TaskCard.jsx";
 import AddTaskModal from "../../Components/AddTaskModal.jsx";
 import { FiPlus } from "react-icons/fi";
 
-const initialTasks = [
-  { id: 1, title: "Design UI Mockups", createdAt: new Date().toISOString(), startingAt: null, endingAt: null },
-  { id: 2, title: "Set up Database", createdAt: new Date().toISOString(), startingAt: null, endingAt: null },
-  { id: 3, title: "Write Documentation", createdAt: new Date().toISOString(), startingAt: null, endingAt: null },
-];
-
-function getStatus(endingAt) {
-  if (!endingAt) return "In Progress";
-  const now = new Date();
-  const end = new Date(endingAt);
-  if (end < new Date(now.getFullYear(), now.getMonth(), now.getDate())) return "Completed";
-  return "In Progress";
-}
-
 const Tasks = () => {
-  const [tasks, setTasks] = useState(initialTasks);
   const [showModal, setShowModal] = useState(false);
   const [modalMode, setModalMode] = useState("add");
   const [editingTask, setEditingTask] = useState(null);
@@ -77,21 +62,9 @@ const Tasks = () => {
         </button>
       </div>
       <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {tasks.map((task) => (
-          <TaskCard
-            key={task.id}
-            title={task.title}
-            status={getStatus(task.endingAt)}
-            createdAt={task.createdAt}
-            startingAt={task.startingAt}
-            endingAt={task.endingAt}
-            onEdit={() => openEditModal(task)}
-            onDelete={() => handleDeleteTask(task.id)}
-          />
-        ))}
-        {tasks.length === 0 && (
-          <div className="col-span-full text-center text-gray-400 py-12 text-lg">No tasks found.</div>
-        )}
+
+          <TaskCard/>
+
       </div>
       </div>
     </div>
