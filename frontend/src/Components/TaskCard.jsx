@@ -28,6 +28,15 @@ const TaskCard = () => {
     }
   }
 
+  const editTask = async (id,upadatedTask) => {
+    try {
+      const response = await axios.put(`http://localhost:3000/tasks/${id}`, upadatedTask);
+      setTasks(tasks.map(task => task.id === id ? response.data.tasks : task));
+    } catch (error) {
+      console.error("Error updating task:", error);
+    }
+  }
+
   return (
     <div  className="mb-5">
 
@@ -51,7 +60,8 @@ const TaskCard = () => {
       {/*<span className="text-white text-xs">Added: {formatDate(createdAt)}</span>*/}
       {/*<span className="text-white text-xs">Ending: {endingAt ? formatDate(endingAt) : '-'}</span>*/}
       <div className="flex flex-wrap gap-2 mt-3 sm:mt-4">
-        <button className="px-3 py-1 rounded-full bg-[#aff901] text-black font-semibold text-xs flex items-center gap-1 transition-transform duration-150 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#aff901]">
+        <button className="px-3 py-1 rounded-full bg-[#aff901] text-black font-semibold text-xs flex items-center gap-1 transition-transform duration-150 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#aff901]"
+        onClick={editTask}>
           <FiEdit2 className="text-base" /> Edit
         </button>
         <button className="px-3 py-1 rounded-full bg-white text-black font-semibold text-xs border border-[#aff901] flex items-center gap-1 transition-transform duration-150 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#aff901]"
