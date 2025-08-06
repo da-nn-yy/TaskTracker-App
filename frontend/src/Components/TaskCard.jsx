@@ -4,14 +4,14 @@ import axios from "axios";
 import tasks from "../Pages/main/Tasks.jsx";
 
 const TaskCard = () => {
-  const [task, setTask] = useState([]);
+  const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
     const fetchTasks = async () => {
       try {
         const response = await axios.get("http://localhost:3000/tasks");
         console.log(response.data.tasks);
-        setTask(response.data.tasks);
+        setTasks(response.data.tasks);
       } catch (error) {
         console.error("Error while fecthing data",error);
       }
@@ -22,7 +22,7 @@ const TaskCard = () => {
   const deleteTask = async (id) => {
     try {
       await axios.delete(`http://localhost:3000/tasks/${id}`);
-      setTask(task.filter(t => t.id !== id));
+      setTasks(tasks.filter(t => t.id !== id));
     }catch (error) {
       console.error("Error deleting task:", error);
     }
@@ -30,11 +30,16 @@ const TaskCard = () => {
 
   return (
     <div>
-      {task.map((task) => (
+      {tasks.length > 0 ? (tasks.map((task) => (
         <div key={task.id}>
           <h1>{task.title}</h1>
+        <button onClick={() => deleteTask(task.id)} className="delete-btn">
+          Delete
+        </button>
         </div>
-      ))}
+      ))):(
+      <div className="text-center text-gray-500">No tasks available</div>)
+      }
     </div>
     // <div
     //   className="bg-black rounded-2xl p-4 sm:p-6 flex flex-col gap-2 shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-105 focus-within:ring-2 focus-within:ring-[#aff901] focus-within:ring-offset-2 outline-none"
