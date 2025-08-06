@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Add CORS configuration to backend server for frontend integration">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Add Prettier configuration for automatic code formatting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/controllers/taskController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/taskController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,23 +59,23 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.localhost:5173.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.localhost:5173.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app\backend\routes" />
@@ -145,39 +142,14 @@
       <workItem from="1753878687222" duration="657000" />
       <workItem from="1753879358272" duration="612000" />
       <workItem from="1754039161862" duration="1047000" />
-      <workItem from="1754049338462" duration="4606000" />
-    </task>
-    <task id="LOCAL-00016" summary="Add Dashboard, TaskCard, FilterBar, and AddTaskModal components with responsive design">
-      <option name="closed" value="true" />
-      <created>1752768191019</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1752768191019</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Add Dashboard, TaskCard, FilterBar components and enhance Header with mobile drawer navigation">
-      <option name="closed" value="true" />
-      <created>1752768219727</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1752768219727</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Add TaskCard and FilterBar components; enhance Header with mobile drawer navigation and blur overlay">
-      <option name="closed" value="true" />
-      <created>1752768480099</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1752768480099</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Add TaskCard component and enhance Header with blur overlay for mobile navigation">
-      <option name="closed" value="true" />
-      <created>1752768500366</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1752768500366</updated>
+      <workItem from="1754049338462" duration="5177000" />
+      <workItem from="1754168470851" duration="135000" />
+      <workItem from="1754196259509" duration="321000" />
+      <workItem from="1754365376197" duration="894000" />
+      <workItem from="1754459693644" duration="2724000" />
+      <workItem from="1754465756818" duration="356000" />
+      <workItem from="1754467424773" duration="938000" />
+      <workItem from="1754468547562" duration="1445000" />
     </task>
     <task id="LOCAL-00020" summary="Improve mobile navigation UX with enhanced drawer overlay and close button styling">
       <option name="closed" value="true" />
@@ -539,17 +511,45 @@
       <option name="project" value="LOCAL" />
       <updated>1754053115881</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Add axios dependency and implement task fetching from backend API">
+      <option name="closed" value="true" />
+      <created>1754054079010</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1754054079010</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Update getTasks response to wrap tasks array in object structure">
+      <option name="closed" value="true" />
+      <created>1754054096808</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1754054096808</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Update IDE workspace configuration with latest commit reference and file changes">
+      <option name="closed" value="true" />
+      <created>1754054120719</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1754054120719</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Add Prettier configuration for automatic code formatting">
+      <option name="closed" value="true" />
+      <created>1754054151877</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1754054151877</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add comprehensive README with project overview, setup instructions, and Firebase configuration guide" />
-    <MESSAGE value="Update README to replace demo section with screenshots of the application" />
-    <MESSAGE value="Replace demo section with multiple application screenshots in README" />
-    <MESSAGE value="Update screenshot paths to reference public directory in README" />
     <MESSAGE value="Add new screenshot images to README documentation" />
     <MESSAGE value="Simplify README by removing setup instructions and keeping core project information" />
     <MESSAGE value="Adjust screenshot widths in README for better visual balance" />
@@ -571,6 +571,10 @@
     <MESSAGE value="Update server root endpoint with HTML formatting and clickable API link" />
     <MESSAGE value="Fix line endings in README.md file" />
     <MESSAGE value="Add CORS configuration to backend server for frontend integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add CORS configuration to backend server for frontend integration" />
+    <MESSAGE value="Add axios dependency and implement task fetching from backend API" />
+    <MESSAGE value="Update getTasks response to wrap tasks array in object structure" />
+    <MESSAGE value="Update IDE workspace configuration with latest commit reference and file changes" />
+    <MESSAGE value="Add Prettier configuration for automatic code formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Prettier configuration for automatic code formatting" />
   </component>
 </project>
