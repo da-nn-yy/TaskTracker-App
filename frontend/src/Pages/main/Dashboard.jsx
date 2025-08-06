@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TaskCard from "../../Components/TaskCard.jsx";
 import FilterBar from "../../Components/FilterBar.jsx";
-import AddTaskModal from "../../Components/AddTaskModal.jsx";
+import TaskModal from "../../Components/TaskModal.jsx";
 import { FiPlus } from "react-icons/fi";
 
 const initialTasks = [
@@ -61,7 +61,7 @@ const Dashboard = () => {
       </div>
       <div className="container">
 
-      <AddTaskModal
+      <TaskModal
         open={showModal}
         onClose={() => setShowModal(false)}
         mode={modalMode}
