@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Add Prettier configuration for automatic code formatting">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Fix state variable naming and add delete functionality to TaskCard component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/main/Tasks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/main/Tasks.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,31 +150,7 @@
       <workItem from="1754459693644" duration="2724000" />
       <workItem from="1754465756818" duration="356000" />
       <workItem from="1754467424773" duration="938000" />
-      <workItem from="1754468547562" duration="1445000" />
-    </task>
-    <task id="LOCAL-00020" summary="Improve mobile navigation UX with enhanced drawer overlay and close button styling">
-      <option name="closed" value="true" />
-      <created>1752768512803</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1752768512803</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Enhance AddTaskModal with edit mode support and form validation">
-      <option name="closed" value="true" />
-      <created>1752777757672</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1752777757672</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Implement task management functionality with add, edit, delete, and filter operations">
-      <option name="closed" value="true" />
-      <created>1752777772026</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1752777772026</updated>
+      <workItem from="1754468547562" duration="7542000" />
     </task>
     <task id="LOCAL-00023" summary="Refactor FilterBar component to support dynamic filtering with active state management">
       <option name="closed" value="true" />
@@ -543,15 +520,37 @@
       <option name="project" value="LOCAL" />
       <updated>1754054151877</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Remove task fetching logic from App component and clean up imports">
+      <option name="closed" value="true" />
+      <created>1754470349892</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1754470349892</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Remove task fetching logic from App component and clean up imports">
+      <option name="closed" value="true" />
+      <created>1754470363957</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1754470363957</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Fix state variable naming and add delete functionality to TaskCard component">
+      <option name="closed" value="true" />
+      <created>1754471395263</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1754471395263</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add new screenshot images to README documentation" />
-    <MESSAGE value="Simplify README by removing setup instructions and keeping core project information" />
     <MESSAGE value="Adjust screenshot widths in README for better visual balance" />
     <MESSAGE value="Update README to mention built-in authentication option alongside Google Sign-In" />
     <MESSAGE value="Update vite.svg with new SVG structure and styling" />
@@ -575,6 +574,8 @@
     <MESSAGE value="Update getTasks response to wrap tasks array in object structure" />
     <MESSAGE value="Update IDE workspace configuration with latest commit reference and file changes" />
     <MESSAGE value="Add Prettier configuration for automatic code formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Prettier configuration for automatic code formatting" />
+    <MESSAGE value="Remove task fetching logic from App component and clean up imports" />
+    <MESSAGE value="Fix state variable naming and add delete functionality to TaskCard component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix state variable naming and add delete functionality to TaskCard component" />
   </component>
 </project>
