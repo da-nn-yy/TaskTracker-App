@@ -34,6 +34,7 @@ const TaskModal = ({task, isOpen,onClose,refreshTasks}) => {
     }
       if (refreshTasks) refreshTasks();
       onClose();
+
 }catch (error) {
       console.error("Error submitting task:", error);
     }

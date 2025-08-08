@@ -86,28 +86,4 @@ const TaskCard = ({refreshTasks}) => {
 
 export default TaskCard;
 
-// TaskCard.jsx
-// import React, { useState } from 'react';
-// import TaskModal from './TaskModal';
-//
-// const TaskCard = ({ task, refreshTasks }) => {
-//   const [showModal, setShowModal] = useState(false);
-//
-//   return (
-//     <div className="task-card">
-//       <h3>{task.title}</h3>
-//       <p>{task.description}</p>
-//       <button onClick={() => setShowModal(true)}>Edit</button>
-//
-//       <TaskModal
-//         isOpen={showModal}
-//         onClose={() => setShowModal(false)}
-//         refreshTasks={refreshTasks}
-//         task={task}
-//       />
-//     </div>
-//   );
-// };
-//
-// export default TaskCard;
 
