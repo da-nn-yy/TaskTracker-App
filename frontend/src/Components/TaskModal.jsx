@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const TaskModal = ({task}) => {
+const TaskModal = ({task, isOpen,onClose,refreshTasks,tasks}) => {
 
   const [title, setTitle] = useState('')
 
@@ -37,6 +37,9 @@ const TaskModal = ({task}) => {
 
   }
 
+  if(!isOpen) return null;
+
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 px-4 sm:px-8 md:px-12">
       <div>
@@ -49,38 +52,23 @@ const TaskModal = ({task}) => {
         <form className="flex flex-col gap-3 sm:gap-4" onSubmit={handleSubmit}>
           <label className="text-black font-semibold mb-1" htmlFor="task-title">Task Title</label>
           <input
-            id="task-title"
             type="text"
             placeholder="Task Title"
             className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"
             value={title}
             onChange={e => setTitle(e.target.value)}
             autoFocus
+            required
           />
-          {/*{showEndingDate && (*/}
-          {/*  <>*/}
-          {/*    <label className="text-black font-semibold mb-1" htmlFor="start-date">Start Date</label>*/}
-          {/*    <input*/}
-          {/*      id="start-date"*/}
-          {/*      type="date"*/}
-          {/*      className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"*/}
-          {/*      value={startingAt}*/}
-          {/*      onChange={e => setStartingAt(e.target.value)}*/}
-         {/*    />*/}
-          {/*    <label className="text-black font-semibold mb-1" htmlFor="end-date">End Date</label>*/}
-          {/*    <input*/}
-          {/*      id="end-date"*/}
-          {/*      type="date"*/}
-          {/*      className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"*/}
-          {/*      value={endingAt}*/}
-          {/*      onChange={e => setEndingAt(e.target.value)}*/}
-          {/*      placeholder="End Date"*/}
-          {/*    />*/}
-          {/*  </>*/}
-          {/*)}*/}
+          <input
+            placeholder = "Task Description"
+            type="text"
+            value = {description}
+            className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"
+            onChange={e => setDescription(e.target.value)}/>
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-2">
-            <button type="submit" className="flex-1 py-2 sm:py-3 rounded-full bg-[#aff901] text-black font-bold hover:opacity-90 transition">Edit</button>
-            <button type="button" className="flex-1 py-2 sm:py-3 rounded-full bg-black text-[#aff901] font-bold hover:opacity-80 transition">Cancel</button>
+            <button type="submit" className="flex-1 py-2 sm:py-3 rounded-full bg-[#aff901] text-black font-bold hover:opacity-90 transition">{task ? 'Update' : "Add"}</button>
+            <button type="button" className="flex-1 py-2 sm:py-3 rounded-full bg-black text-[#aff901] font-bold hover:opacity-80 transition" onClick={onClose}>Cancel</button>
           </div>
         </form>
       </div>
