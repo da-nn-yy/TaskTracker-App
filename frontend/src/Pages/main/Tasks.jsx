@@ -3,34 +3,24 @@ import TaskCard from "../../Components/TaskCard.jsx";
 import TaskModal from "../../Components/TaskModal.jsx";
 import { FiPlus } from "react-icons/fi";
 
-const Tasks = () => {
+const Tasks = ({fetchTasks}) => {
   const [showModal, setShowModal] = useState(false);
-  const [modalMode, setModalMode] = useState("add");
   const [editingTask, setEditingTask] = useState(null);
 
-  const handleAddTask = (task) => {
-    setTasks([
-      ...tasks,
-      { ...task, id: Date.now(), createdAt: new Date().toISOString() },
-    ]);
-  };
-  const handleEditTask = (updatedTask) => {
-    setTasks(tasks.map((t) => (t.id === updatedTask.id ? { ...updatedTask } : t)));
-  };
-  const handleDeleteTask = (id) => {
-    setTasks(tasks.filter((t) => t.id !== id));
-  };
   const openAddModal = () => {
-    setModalMode("add");
+    setShowModal(true);
     setEditingTask(null);
-    setShowModal(true);
-  };
-  const openEditModal = (task) => {
-    setModalMode("edit");
-    setEditingTask(task);
-    setShowModal(true);
-  };
+  }
 
+  const openEditModal = (task) => {
+    setShowModal(true);
+    setEditingTask(task);
+  }
+
+  const closeModal = () => {
+    console.log('Closing modal...');
+    setShowModal(false);
+  };
   return (
     <div className="min-h-screen py-8 px-4 sm:px-8 md:px-12 my-4">
       <div>
@@ -40,18 +30,6 @@ const Tasks = () => {
       </div>
       <div className="container">
 
-      <TaskModal
-        open={showModal}
-        onClose={() => setShowModal(false)}
-        mode={modalMode}
-        initialTask={editingTask}
-        onSave={(task) => {
-          if (modalMode === "add") handleAddTask(task);
-          else handleEditTask(task);
-          setShowModal(false);
-        }}
-        showEndingDate={true}
-      />
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-2xl font-bold text-black">All Tasks</h1>
         <button
@@ -64,6 +42,12 @@ const Tasks = () => {
       <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
           <TaskCard/>
+      <TaskModal
+        iopen={showModal}
+        onClose={closeModal}
+        task={openAddModal ? null : openEditModal}
+        refreshTasks={fetchTasks}
+      />
 
       </div>
       </div>

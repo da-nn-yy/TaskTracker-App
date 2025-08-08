@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update IDE workspace configuration with latest commit reference and file changes">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Fix button text and remove key prop from TaskCard component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/AddTaskModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/TaskModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Pages/main/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/main/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Pages/main/Tasks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/main/Tasks.jsx" afterDir="false" />
     </list>
@@ -151,39 +151,15 @@
       <workItem from="1754459693644" duration="2724000" />
       <workItem from="1754465756818" duration="356000" />
       <workItem from="1754467424773" duration="938000" />
-      <workItem from="1754468547562" duration="12720000" />
-    </task>
-    <task id="LOCAL-00025" summary="Add react-icons dependency for icon components">
-      <option name="closed" value="true" />
-      <created>1752779189101</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1752779189101</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Fix formatting and add trailing newline to index.css">
-      <option name="closed" value="true" />
-      <created>1752781038786</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1752781038786</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Add Tasks page route and import to App component">
-      <option name="closed" value="true" />
-      <created>1752781081243</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1752781081243</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Add date fields and enhanced task card functionality with icons and formatting">
-      <option name="closed" value="true" />
-      <created>1752781133052</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1752781133052</updated>
+      <workItem from="1754468547562" duration="13250000" />
+      <workItem from="1754510850981" duration="783000" />
+      <workItem from="1754562327853" duration="1303000" />
+      <workItem from="1754566173936" duration="1126000" />
+      <workItem from="1754574203552" duration="340000" />
+      <workItem from="1754574981151" duration="971000" />
+      <workItem from="1754636891919" duration="1062000" />
+      <workItem from="1754640119353" duration="3416000" />
+      <workItem from="1754643553473" duration="2080000" />
     </task>
     <task id="LOCAL-00029" summary="Replace hardcoded navigation links with React Router Link components and add active state highlighting">
       <option name="closed" value="true" />
@@ -545,17 +521,45 @@
       <option name="project" value="LOCAL" />
       <updated>1754480402634</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Rename AddTaskModal component to TaskModal in Dashboard">
+      <option name="closed" value="true" />
+      <created>1754487369921</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1754487369921</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Add edit task functionality and update modal component reference">
+      <option name="closed" value="true" />
+      <created>1754487388608</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1754487388608</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Rename AddTaskModal component to TaskModal and update references">
+      <option name="closed" value="true" />
+      <created>1754487402796</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1754487402796</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Fix button text and remove key prop from TaskCard component">
+      <option name="closed" value="true" />
+      <created>1754637147994</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1754637147995</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update README to mention built-in authentication option alongside Google Sign-In" />
-    <MESSAGE value="Update vite.svg with new SVG structure and styling" />
-    <MESSAGE value="Refactor vite.svg to improve SVG structure and styling" />
-    <MESSAGE value="Fix trailing whitespace in README.md title" />
     <MESSAGE value="Add Poppins font import to Google Fonts URL in index.css" />
     <MESSAGE value="Reduce TaskCard hover scale effect from 110% to 105%" />
     <MESSAGE value="Refactor mobile menu layout and add border styling to Header component" />
@@ -577,6 +581,10 @@
     <MESSAGE value="Fix state variable naming and add delete functionality to TaskCard component" />
     <MESSAGE value="Refactor Tasks component to remove local state and integrate TaskCard with proper styling" />
     <MESSAGE value="Update IDE workspace configuration with latest commit reference and file changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update IDE workspace configuration with latest commit reference and file changes" />
+    <MESSAGE value="Rename AddTaskModal component to TaskModal in Dashboard" />
+    <MESSAGE value="Add edit task functionality and update modal component reference" />
+    <MESSAGE value="Rename AddTaskModal component to TaskModal and update references" />
+    <MESSAGE value="Fix button text and remove key prop from TaskCard component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix button text and remove key prop from TaskCard component" />
   </component>
 </project>
