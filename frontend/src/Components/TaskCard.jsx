@@ -2,11 +2,13 @@ import React, {useEffect, useState} from "react";
 import { FiEdit2, FiTrash2 } from "react-icons/fi";
 import axios from "axios";
 import tasks from "../Pages/main/Tasks.jsx";
+import TaskModal from "./TaskModal.jsx";
 
 const TaskCard = () => {
   const [tasks, setTasks] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+  const [editingTask, setEditingTask] = useState(null)
 
-  useEffect(() => {
     const fetchTasks = async () => {
       try {
         const response = await axios.get("http://localhost:3000/tasks");
@@ -16,6 +18,7 @@ const TaskCard = () => {
         console.error("Error while fecthing data",error);
       }
     }
+  useEffect(() => {
       fetchTasks()
   },[])
 
@@ -28,14 +31,16 @@ const TaskCard = () => {
     }
   }
 
-  const editTask = async (id,upadatedTask) => {
-    try {
-      const response = await axios.put(`http://localhost:3000/tasks/${id}`, upadatedTask);
-      setTasks(tasks.map(task => task.id === id ? response.data.tasks : task));
-    } catch (error) {
-      console.error("Error updating task:", error);
-    }
-  }
+
+  const openEditModal = (task) => {
+    setEditingTask(task);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setEditingTask(null);
+  };
 
   return (
     <div  className="mb-5">
@@ -53,15 +58,10 @@ const TaskCard = () => {
       <span className="text-white text-xs sm:text-sm font-medium">Status: {task.status}</span>
       <span className="text-white text-xs sm:text-sm font-medium">Added: {task.created_at}</span>
 
-      {/*{task.due_date && (*/}
-      {/*  <span>Due: {new Date(task.due_date).toLocaleDateString()}</span>*/}
-      {/*)}*/}
-      {/*<span className="text-white text-xs">Start: {startingAt ? formatDate(startingAt) : '-'}</span>*/}
-      {/*<span className="text-white text-xs">Added: {formatDate(createdAt)}</span>*/}
-      {/*<span className="text-white text-xs">Ending: {endingAt ? formatDate(endingAt) : '-'}</span>*/}
+
       <div className="flex flex-wrap gap-2 mt-3 sm:mt-4">
         <button className="px-3 py-1 rounded-full bg-[#aff901] text-black font-semibold text-xs flex items-center gap-1 transition-transform duration-150 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#aff901]"
-        onClick={editTask}>
+        onClick={() => openEditModal(task)}>
           <FiEdit2 className="text-base" /> Edit
         </button>
         <button className="px-3 py-1 rounded-full bg-white text-black font-semibold text-xs border border-[#aff901] flex items-center gap-1 transition-transform duration-150 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#aff901]"
@@ -69,6 +69,12 @@ const TaskCard = () => {
         >
           <FiTrash2 className="text-base" /> Delete
         </button>
+        <TaskModal
+                  isOpen={showModal}
+                  onClose={() => setShowModal(false)}
+                  refreshTasks={fetchTasks}
+                  task={task}
+                />
       </div>
     </div>
   ))):(
@@ -79,3 +85,29 @@ const TaskCard = () => {
 };
 
 export default TaskCard;
+
+// TaskCard.jsx
+// import React, { useState } from 'react';
+// import TaskModal from './TaskModal';
+//
+// const TaskCard = ({ task, refreshTasks }) => {
+//   const [showModal, setShowModal] = useState(false);
+//
+//   return (
+//     <div className="task-card">
+//       <h3>{task.title}</h3>
+//       <p>{task.description}</p>
+//       <button onClick={() => setShowModal(true)}>Edit</button>
+//
+//       <TaskModal
+//         isOpen={showModal}
+//         onClose={() => setShowModal(false)}
+//         refreshTasks={refreshTasks}
+//         task={task}
+//       />
+//     </div>
+//   );
+// };
+//
+// export default TaskCard;
+
