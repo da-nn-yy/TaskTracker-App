@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Fix TaskModal prop handling and add refreshTasks prop to TaskCard">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/TaskModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/main/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/main/Dashboard.jsx" afterDir="false" />
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Refactor Dashboard component to use useCallback for fetchTasks and improve task grid layout">
       <change beforePath="$PROJECT_DIR$/frontend/src/Pages/main/Tasks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/main/Tasks.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,31 +156,7 @@
       <workItem from="1754636891919" duration="1062000" />
       <workItem from="1754640119353" duration="3416000" />
       <workItem from="1754643553473" duration="5061000" />
-      <workItem from="1754650208269" duration="665000" />
-    </task>
-    <task id="LOCAL-00034" summary="Update global styles with body background color and responsive container utility">
-      <option name="closed" value="true" />
-      <created>1752794545230</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1752794545230</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Add Google authentication integration and animated background to Login page">
-      <option name="closed" value="true" />
-      <created>1752824387554</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1752824387554</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Add animated background elements to Tasks page layout">
-      <option name="closed" value="true" />
-      <created>1752824397915</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1752824397915</updated>
+      <workItem from="1754650208269" duration="985000" />
     </task>
     <task id="LOCAL-00037" summary="Add animated background elements to AddTaskModal component">
       <option name="closed" value="true" />
@@ -554,15 +526,37 @@
       <option name="project" value="LOCAL" />
       <updated>1754646780407</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Refactor Dashboard component to use useCallback for fetchTasks and improve task grid layout">
+      <option name="closed" value="true" />
+      <created>1754651051028</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1754651051028</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Remove commented code and clean up TaskCard component">
+      <option name="closed" value="true" />
+      <created>1754651068546</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1754651068546</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Refactor Dashboard component to use useCallback for fetchTasks and improve task grid layout">
+      <option name="closed" value="true" />
+      <created>1754651082976</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1754651082976</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Remove commented port configuration from database connection" />
-    <MESSAGE value="Update MySQL2 dependency to latest version" />
     <MESSAGE value="Update IDE workspace configuration with latest commit reference" />
     <MESSAGE value="Update README with comprehensive backend documentation and deployment details" />
     <MESSAGE value="Remove backend documentation section from README" />
@@ -586,6 +580,8 @@
     <MESSAGE value="Add description input field and improve TaskModal props handling" />
     <MESSAGE value="Refactor Tasks component to simplify modal handling and fix prop passing" />
     <MESSAGE value="Fix TaskModal prop handling and add refreshTasks prop to TaskCard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix TaskModal prop handling and add refreshTasks prop to TaskCard" />
+    <MESSAGE value="Remove commented code and clean up TaskCard component" />
+    <MESSAGE value="Refactor Dashboard component to use useCallback for fetchTasks and improve task grid layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor Dashboard component to use useCallback for fetchTasks and improve task grid layout" />
   </component>
 </project>
