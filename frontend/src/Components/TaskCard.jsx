@@ -4,7 +4,7 @@ import axios from "axios";
 import tasks from "../Pages/main/Tasks.jsx";
 import TaskModal from "./TaskModal.jsx";
 
-const TaskCard = () => {
+const TaskCard = ({refreshTasks}) => {
   const [tasks, setTasks] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [editingTask, setEditingTask] = useState(null)

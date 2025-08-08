@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const TaskModal = ({task, isOpen,onClose,refreshTasks,tasks}) => {
+const TaskModal = ({task, isOpen,onClose,refreshTasks}) => {
 
   const [title, setTitle] = useState('')
 
@@ -22,7 +22,8 @@ const TaskModal = ({task, isOpen,onClose,refreshTasks,tasks}) => {
     try{
       if (task) {
         const response = await axios.put(`http://localhost:3000/tasks/${task.id}`, {
-          title, description
+          title,
+          description
         });
         console.log("Task updated successfully:", response.data);
       }else{
@@ -31,6 +32,8 @@ const TaskModal = ({task, isOpen,onClose,refreshTasks,tasks}) => {
         });
       console.log("Task added successfully:", response.data);
     }
+      if (refreshTasks) refreshTasks();
+      onClose();
 }catch (error) {
       console.error("Error submitting task:", error);
     }
