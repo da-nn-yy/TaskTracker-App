@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Fix button text and remove key prop from TaskCard component">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Fix TaskModal prop handling and add refreshTasks prop to TaskCard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/TaskModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskModal.jsx" afterDir="false" />
@@ -159,47 +159,8 @@
       <workItem from="1754574981151" duration="971000" />
       <workItem from="1754636891919" duration="1062000" />
       <workItem from="1754640119353" duration="3416000" />
-      <workItem from="1754643553473" duration="2080000" />
-    </task>
-    <task id="LOCAL-00029" summary="Replace hardcoded navigation links with React Router Link components and add active state highlighting">
-      <option name="closed" value="true" />
-      <created>1752781359780</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1752781359780</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Improve AddTaskModal accessibility and responsive design with form labels and enhanced padding">
-      <option name="closed" value="true" />
-      <created>1752783325893</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1752783325893</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Fix Router component formatting and add trailing space">
-      <option name="closed" value="true" />
-      <created>1752794475625</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1752794475625</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Update page layouts with consistent container styling and remove Add Task button from Dashboard">
-      <option name="closed" value="true" />
-      <created>1752794495182</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1752794495182</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Update Header and TaskCard styling with container layout, font changes, and enhanced accessibility">
-      <option name="closed" value="true" />
-      <created>1752794529879</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1752794529879</updated>
+      <workItem from="1754643553473" duration="5061000" />
+      <workItem from="1754650208269" duration="665000" />
     </task>
     <task id="LOCAL-00034" summary="Update global styles with body background color and responsive container utility">
       <option name="closed" value="true" />
@@ -553,18 +514,53 @@
       <option name="project" value="LOCAL" />
       <updated>1754637147995</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Refactor Dashboard to fetch tasks from backend API and simplify component structure">
+      <option name="closed" value="true" />
+      <created>1754645784683</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1754645784683</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Refactor TaskCard to use TaskModal for editing tasks and improve modal state management">
+      <option name="closed" value="true" />
+      <created>1754645803407</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1754645803408</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Add description input field and improve TaskModal props handling">
+      <option name="closed" value="true" />
+      <created>1754645812570</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1754645812570</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Refactor Tasks component to simplify modal handling and fix prop passing">
+      <option name="closed" value="true" />
+      <created>1754645823739</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1754645823739</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Fix TaskModal prop handling and add refreshTasks prop to TaskCard">
+      <option name="closed" value="true" />
+      <created>1754646780407</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1754646780407</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Poppins font import to Google Fonts URL in index.css" />
-    <MESSAGE value="Reduce TaskCard hover scale effect from 110% to 105%" />
-    <MESSAGE value="Refactor mobile menu layout and add border styling to Header component" />
-    <MESSAGE value="Restructure project directory by moving frontend files to root level" />
-    <MESSAGE value="Add backend dependencies and node_modules for task tracker application" />
     <MESSAGE value="Remove commented port configuration from database connection" />
     <MESSAGE value="Update MySQL2 dependency to latest version" />
     <MESSAGE value="Update IDE workspace configuration with latest commit reference" />
@@ -585,6 +581,11 @@
     <MESSAGE value="Add edit task functionality and update modal component reference" />
     <MESSAGE value="Rename AddTaskModal component to TaskModal and update references" />
     <MESSAGE value="Fix button text and remove key prop from TaskCard component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix button text and remove key prop from TaskCard component" />
+    <MESSAGE value="Refactor Dashboard to fetch tasks from backend API and simplify component structure" />
+    <MESSAGE value="Refactor TaskCard to use TaskModal for editing tasks and improve modal state management" />
+    <MESSAGE value="Add description input field and improve TaskModal props handling" />
+    <MESSAGE value="Refactor Tasks component to simplify modal handling and fix prop passing" />
+    <MESSAGE value="Fix TaskModal prop handling and add refreshTasks prop to TaskCard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix TaskModal prop handling and add refreshTasks prop to TaskCard" />
   </component>
 </project>

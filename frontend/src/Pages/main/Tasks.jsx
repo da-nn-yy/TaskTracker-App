@@ -3,18 +3,14 @@ import TaskCard from "../../Components/TaskCard.jsx";
 import TaskModal from "../../Components/TaskModal.jsx";
 import { FiPlus } from "react-icons/fi";
 
-const Tasks = ({fetchTasks}) => {
+const Tasks = ({fetchTasks,refreshTasks}) => {
   const [showModal, setShowModal] = useState(false);
   const [editingTask, setEditingTask] = useState(null);
 
   const openAddModal = () => {
     setShowModal(true);
     setEditingTask(null);
-  }
-
-  const openEditModal = (task) => {
-    setShowModal(true);
-    setEditingTask(task);
+    console.log('Opening add modal...');
   }
 
   const closeModal = () => {
@@ -42,15 +38,16 @@ const Tasks = ({fetchTasks}) => {
       <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
           <TaskCard/>
-      <TaskModal
-        iopen={showModal}
-        onClose={closeModal}
-        task={openAddModal ? null : openEditModal}
-        refreshTasks={fetchTasks}
-      />
 
       </div>
       </div>
+      {showModal &&(
+        <TaskModal
+        isOpen={showModal}
+        onClose={closeModal}
+        task={editingTask}
+        refreshTasks={refreshTasks}
+      />)}
     </div>
   );
 };
