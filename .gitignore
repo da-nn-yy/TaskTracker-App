@@ -9,8 +9,8 @@ lerna-debug.log*
 
 
 frontend/node_modules
-backend/src/service-account-key.json
-backend/node_modules
+.backend/src/service-account-key.json
+/backend/node_modules/
 backend/.env
 frontend/.env
 
