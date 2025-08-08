@@ -1,15 +1,15 @@
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import TaskCard from "../../Components/TaskCard.jsx";
 import TaskModal from "../../Components/TaskModal.jsx";
 import { FiPlus } from "react-icons/fi";
 import axios from "axios";
 
-const Dashboard = ({task}) => {
+const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
 
   const [showModal, setShowModal] = useState(true);
 
-    const fetchTasks = async () => {
+    const fetchTasks = useCallback(async () => {
       try {
         const response = await axios.get("http://localhost:3000/tasks");
         console.log(response.data.tasks);
@@ -17,11 +17,11 @@ const Dashboard = ({task}) => {
       } catch (error) {
         console.error("Error while fecthing data", error);
       }
-    }
+    },[])
 
   useEffect(() => {
-      fetchTasks()
-  },[])
+      fetchTasks();
+  },[fetchTasks])
   return (
     <div className="min-h-screen  py-8 px-4 sm:px-8 md:px-12 my-4">
       <div className="-z-1">
@@ -31,22 +31,13 @@ const Dashboard = ({task}) => {
       </div>
       <div className="container">
 
-
+      <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
         {tasks.map((task, index) => (
-          <div  className="grid grid-rows-3 gap-2 mt-3 sm:mt-4"><TaskCard
-          key={task.id}
-          task={task}
-          />
-        </div>
+            <TaskCard task={task}  key={task.index} />
         ))}
+      </div>
 
-      {/*<TaskModal*/}
-      {/*  isOpen={showModal}*/}
-      {/*  onClose={() => setShowModal(false)}*/}
-      {/*  refreshTasks={fetchTasks}*/}
-      {/*  task={task}*/}
-      {/*/>*/}
 
       </div>
       </div>
