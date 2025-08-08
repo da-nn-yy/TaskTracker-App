@@ -32,7 +32,9 @@ const TaskModal = ({task, isOpen,onClose,refreshTasks}) => {
         });
       console.log("Task added successfully:", response.data);
     }
-      if (refreshTasks) refreshTasks();
+      if (refreshTasks) {
+        refreshTasks();
+      }
       onClose();
 
 }catch (error) {

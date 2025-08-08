@@ -41,13 +41,13 @@ const Tasks = ({fetchTasks,refreshTasks}) => {
 
       </div>
       </div>
-      {showModal &&(
+
         <TaskModal
         isOpen={showModal}
         onClose={closeModal}
         task={editingTask}
         refreshTasks={refreshTasks}
-      />)}
+      />
     </div>
   );
 };
