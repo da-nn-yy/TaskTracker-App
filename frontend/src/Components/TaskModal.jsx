@@ -66,7 +66,7 @@ const TaskModal = ({task}) => {
           {/*      className="px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white"*/}
           {/*      value={startingAt}*/}
           {/*      onChange={e => setStartingAt(e.target.value)}*/}
-us          {/*    />*/}
+         {/*    />*/}
           {/*    <label className="text-black font-semibold mb-1" htmlFor="end-date">End Date</label>*/}
           {/*    <input*/}
           {/*      id="end-date"*/}
@@ -79,8 +79,8 @@ us          {/*    />*/}
           {/*  </>*/}
           {/*)}*/}
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-2">
-            <button type="submit" className="flex-1 py-2 sm:py-3 rounded-full bg-[#aff901] text-black font-bold hover:opacity-90 transition">{mode === "edit" ? "Save Changes" : "Add Task"}</button>
-            <button type="button" className="flex-1 py-2 sm:py-3 rounded-full bg-black text-[#aff901] font-bold hover:opacity-80 transition" onClick={onClose}>Cancel</button>
+            <button type="submit" className="flex-1 py-2 sm:py-3 rounded-full bg-[#aff901] text-black font-bold hover:opacity-90 transition">Edit</button>
+            <button type="button" className="flex-1 py-2 sm:py-3 rounded-full bg-black text-[#aff901] font-bold hover:opacity-80 transition">Cancel</button>
           </div>
         </form>
       </div>

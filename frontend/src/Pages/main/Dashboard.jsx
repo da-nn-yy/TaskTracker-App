@@ -80,7 +80,7 @@ const Dashboard = () => {
       <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {filteredTasks.map((task) => (
           <TaskCard
-            key={task.id}
+            // key={task.id}
             title={task.title}
             status={task.status}
             onEdit={() => openEditModal(task)}
