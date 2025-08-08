@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <header className="container bg-[#eaf4f4] drop-shadow-md rounded-full py-4 px-4 sm:py-5 sm:px-8 flex flex-col sm:flex-row items-center sm:justify-between mt-4 sm:mt-6 relative z-50">
+    <header className="relative container bg-[#eaf4f4] drop-shadow-md rounded-full py-4 px-4 sm:py-5 sm:px-8 flex flex-col sm:flex-row items-center sm:justify-between mt-4 sm:mt-6  z-50">
       <div className="flex items-center justify-between w-full sm:w-auto">
         <span className="text-2xl sm:text-3xl font-extrabold text-black tracking-wide" style={{ fontFamily: 'agbalumo' }}>
           Task <span className="text-[#aff901]">Tracker</span>
