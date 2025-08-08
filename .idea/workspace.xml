@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Refactor Dashboard component to use useCallback for fetchTasks and improve task grid layout">
-      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/main/Tasks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/main/Tasks.jsx" afterDir="false" />
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Add comprehensive .gitignore file for Node.js project with frontend/backend structure">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,24 +61,28 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.localhost:5173.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.localhost:5173.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/hp/Desktop/InternProjects/task-tracker-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app\backend\routes" />
       <recent name="C:\Users\hp\Desktop\InternProjects\task-tracker-app\frontend" />
@@ -157,14 +165,6 @@
       <workItem from="1754640119353" duration="3416000" />
       <workItem from="1754643553473" duration="5061000" />
       <workItem from="1754650208269" duration="985000" />
-    </task>
-    <task id="LOCAL-00037" summary="Add animated background elements to AddTaskModal component">
-      <option name="closed" value="true" />
-      <created>1752824645347</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1752824645347</updated>
     </task>
     <task id="LOCAL-00038" summary="Add animated background elements to Dashboard page layout">
       <option name="closed" value="true" />
@@ -550,15 +550,21 @@
       <option name="project" value="LOCAL" />
       <updated>1754651082976</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Add comprehensive .gitignore file for Node.js project with frontend/backend structure">
+      <option name="closed" value="true" />
+      <created>1754658270013</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1754658270014</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update IDE workspace configuration with latest commit reference" />
-    <MESSAGE value="Update README with comprehensive backend documentation and deployment details" />
     <MESSAGE value="Remove backend documentation section from README" />
     <MESSAGE value="Update server response message to include API endpoint information" />
     <MESSAGE value="Update server root endpoint with HTML formatting and clickable API link" />
@@ -582,6 +588,8 @@
     <MESSAGE value="Fix TaskModal prop handling and add refreshTasks prop to TaskCard" />
     <MESSAGE value="Remove commented code and clean up TaskCard component" />
     <MESSAGE value="Refactor Dashboard component to use useCallback for fetchTasks and improve task grid layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor Dashboard component to use useCallback for fetchTasks and improve task grid layout" />
+    <MESSAGE value="Update gitignore files to exclude service account key and environment files" />
+    <MESSAGE value="Add comprehensive .gitignore file for Node.js project with frontend/backend structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comprehensive .gitignore file for Node.js project with frontend/backend structure" />
   </component>
 </project>
