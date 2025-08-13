@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Add user authentication with registration and login endpoints">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Add bcrypt and jsonwebtoken dependencies to backend package">
+      <change afterPath="$PROJECT_DIR$/backend/src/middlewares/authmiddleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/routes/taskRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/taskRoutes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,15 +171,7 @@
       <workItem from="1755064574576" duration="2810000" />
       <workItem from="1755076057874" duration="1301000" />
       <workItem from="1755079108594" duration="251000" />
-      <workItem from="1755082416124" duration="1062000" />
-    </task>
-    <task id="LOCAL-00041" summary="Add comprehensive README with project overview, setup instructions, and Firebase configuration guide">
-      <option name="closed" value="true" />
-      <created>1752830973724</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1752830973724</updated>
+      <workItem from="1755082416124" duration="1723000" />
     </task>
     <task id="LOCAL-00042" summary="Update README to replace demo section with screenshots of the application">
       <option name="closed" value="true" />
@@ -565,14 +557,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755083473970</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Add bcrypt and jsonwebtoken dependencies to backend package">
+      <option name="closed" value="true" />
+      <created>1755083603192</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1755083603193</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update server root endpoint with HTML formatting and clickable API link" />
     <MESSAGE value="Fix line endings in README.md file" />
     <MESSAGE value="Add CORS configuration to backend server for frontend integration" />
     <MESSAGE value="Add axios dependency and implement task fetching from backend API" />
@@ -597,6 +596,7 @@
     <MESSAGE value="Add comprehensive .gitignore file for Node.js project with frontend/backend structure" />
     <MESSAGE value="Add Firebase Admin SDK dependency to backend" />
     <MESSAGE value="Add user authentication with registration and login endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user authentication with registration and login endpoints" />
+    <MESSAGE value="Add bcrypt and jsonwebtoken dependencies to backend package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add bcrypt and jsonwebtoken dependencies to backend package" />
   </component>
 </project>
