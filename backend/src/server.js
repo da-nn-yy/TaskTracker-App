@@ -1,34 +1,74 @@
-import express from'express';
-import dotenv from 'dotenv'
+import express from 'express';
+import dotenv from 'dotenv';
 import taskRoutes from './routes/taskRoutes.js';
-import authRoutes from './routes/authRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 import cors from 'cors';
-const corsOptions = {
-  origin: 'http://localhost:5173',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
-}
 
 dotenv.config();
 
-
 const app = express();
+
+// Middleware
 app.use(express.json());
+app.use(cors({
+  origin: 'http://localhost:5173',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 
-app.use(cors(corsOptions));
+// API Routes
+app.use('/api/tasks', taskRoutes);
+app.use('/api/users', userRoutes);
 
-app.use('/auth', authRoutes);
-
-app.use('/tasks', taskRoutes);
+// Health check endpoint
 app.get('/', (req, res) => {
-  res.send(`
-✅ TaskTracker backend is live!<br> 
- 🧑‍💻 To access the API, use <a href="https://task-tracker-app-be.onrender.com/tasks">/tasks</a> endpoint. `);
+  res.json({
+    message: '✅ TaskTracker backend is live!',
+    version: '2.0.0',
+    features: [
+      'Firebase Authentication',
+      'User Management',
+      'Task Management',
+      'User Statistics'
+    ],
+    endpoints: {
+      tasks: '/api/tasks',
+      users: '/api/users'
+    },
+    status: 'running'
+  });
+});
+
+// Simple test endpoint
+app.get('/test', (req, res) => {
+  res.json({ message: 'Test endpoint working!' });
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error('Global error handler:', err);
+  res.status(500).json({
+    error: 'Internal server error',
+    message: 'Something went wrong on the server'
+  });
+});
+
+// 404 handler
+app.use('*', (req, res) => {
+  res.status(404).json({
+    error: 'Not found',
+    message: `Route ${req.originalUrl} not found`
+  });
 });
 
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`🚀 Server is running on port ${PORT}`);
+  console.log(`📱 Frontend URL: http://localhost:5173`);
+  console.log(`🔐 Backend URL: http://localhost:${PORT}`);
+  console.log(`✅ Health check: http://localhost:${PORT}/`);
+  console.log(`🧪 Test endpoint: http://localhost:${PORT}/test`);
+  console.log(`📋 Task API: http://localhost:${PORT}/api/tasks`);
+  console.log(`👤 User API: http://localhost:${PORT}/api/users`);
 });
-
