@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Add bcrypt and jsonwebtoken dependencies to backend package">
-      <change afterPath="$PROJECT_DIR$/backend/src/middlewares/authmiddleware.js" afterDir="false" />
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Refactor authentication to use AuthContext and add user profile functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/authController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/controllers/taskController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/taskController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/routes/taskRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/taskRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,31 +176,9 @@
       <workItem from="1755064574576" duration="2810000" />
       <workItem from="1755076057874" duration="1301000" />
       <workItem from="1755079108594" duration="251000" />
-      <workItem from="1755082416124" duration="1723000" />
-    </task>
-    <task id="LOCAL-00042" summary="Update README to replace demo section with screenshots of the application">
-      <option name="closed" value="true" />
-      <created>1752831238694</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1752831238694</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Replace demo section with multiple application screenshots in README">
-      <option name="closed" value="true" />
-      <created>1752831250912</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1752831250912</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Update screenshot paths to reference public directory in README">
-      <option name="closed" value="true" />
-      <created>1752838035334</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1752838035334</updated>
+      <workItem from="1755082416124" duration="2763000" />
+      <workItem from="1755085585561" duration="1092000" />
+      <workItem from="1755182728406" duration="2250000" />
     </task>
     <task id="LOCAL-00045" summary="Add new screenshot images to README documentation">
       <option name="closed" value="true" />
@@ -565,16 +548,37 @@
       <option name="project" value="LOCAL" />
       <updated>1755083603193</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Add JWT authentication middleware to protect task routes">
+      <option name="closed" value="true" />
+      <created>1755084312701</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1755084312701</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Rename register endpoint to signup and update function name">
+      <option name="closed" value="true" />
+      <created>1755085633852</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1755085633852</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Refactor authentication to use AuthContext and add user profile functionality">
+      <option name="closed" value="true" />
+      <created>1755187259192</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1755187259193</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix line endings in README.md file" />
-    <MESSAGE value="Add CORS configuration to backend server for frontend integration" />
-    <MESSAGE value="Add axios dependency and implement task fetching from backend API" />
     <MESSAGE value="Update getTasks response to wrap tasks array in object structure" />
     <MESSAGE value="Add Prettier configuration for automatic code formatting" />
     <MESSAGE value="Remove task fetching logic from App component and clean up imports" />
@@ -597,6 +601,9 @@
     <MESSAGE value="Add Firebase Admin SDK dependency to backend" />
     <MESSAGE value="Add user authentication with registration and login endpoints" />
     <MESSAGE value="Add bcrypt and jsonwebtoken dependencies to backend package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add bcrypt and jsonwebtoken dependencies to backend package" />
+    <MESSAGE value="Add JWT authentication middleware to protect task routes" />
+    <MESSAGE value="Rename register endpoint to signup and update function name" />
+    <MESSAGE value="Refactor authentication to use AuthContext and add user profile functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor authentication to use AuthContext and add user profile functionality" />
   </component>
 </project>
