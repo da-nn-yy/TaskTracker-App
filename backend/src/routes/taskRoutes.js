@@ -6,14 +6,17 @@ import {
   updateTask,
   deleteTask
 } from '../controllers/taskController.js';
-import { authenticateToken } from '../middlewares/authMiddleware.js';
+import { authenticateFirebaseToken } from '../middlewares/firebaseAuthMiddleware.js';
 
 const router = express.Router();
 
-router.post('/', authenticateToken,createTask);
-router.get('/', authenticateToken,getTasks);
-router.get('/:id',authenticateToken, getTaskById);
-router.put('/:id',authenticateToken, updateTask);
-router.delete('/:id', authenticateToken,deleteTask);
+// All task routes require Firebase authentication
+router.use(authenticateFirebaseToken);
+
+router.post('/', createTask);
+router.get('/', getTasks);
+router.get('/:id', getTaskById);
+router.put('/:id', updateTask);
+router.delete('/:id', deleteTask);
 
 export default router;
