@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { auth } from "../firebase.js";
+import { useAuth } from "../contexts/AuthContext";
+import UserProfile from "./UserProfile";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [user, setUser] = useState(null);
+  const [showUserProfile, setShowUserProfile] = useState(false);
+  const { currentUser, logout } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
   const navLinks = [
@@ -12,16 +14,20 @@ const Header = () => {
     { to: "/tasks", label: "Tasks" },
   ];
 
-  useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((u) => setUser(u));
-    return () => unsubscribe();
-  }, []);
-
-  const avatar = user?.photoURL || "https://ui-avatars.com/api/?name=" + (user?.displayName || "U") + "&background=aff901&color=000";
+  const avatar = currentUser?.photoURL || "https://ui-avatars.com/api/?name=" + (currentUser?.displayName || "U") + "&background=aff901&color=000";
 
   const handleLogout = async () => {
-    await auth.signOut();
-    navigate("/");
+    try {
+      await logout();
+      navigate("/login");
+    } catch (error) {
+      console.error("Failed to log out", error);
+    }
+  };
+
+  const handleProfileClick = () => {
+    setShowUserProfile(true);
+    setMenuOpen(false);
   };
 
   return (
@@ -48,10 +54,15 @@ const Header = () => {
             {link.label}
           </Link>
         ))}
-        {user ? (
+        {currentUser ? (
           <div className="flex items-center gap-3 ml-4">
-            <img src={avatar} alt="profile" className="w-9 h-9 rounded-full border-2 border-[#aff901] object-cover" />
-            <span className="text-black font-semibold max-w-[120px] truncate">{user.displayName || user.email}</span>
+            <button
+              onClick={handleProfileClick}
+              className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+            >
+              <img src={avatar} alt="profile" className="w-9 h-9 rounded-full border-2 border-[#aff901] object-cover" />
+              <span className="text-black font-semibold max-w-[120px] truncate">{currentUser.displayName || currentUser.email}</span>
+            </button>
             <button
               onClick={handleLogout}
               className="rounded-full bg-black text-[#aff901] px-4 py-2 font-semibold ml-2 hover:bg-[#aff901] hover:text-black border border-[#aff901] transition-colors"
@@ -88,10 +99,15 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              {user ? (
+              {currentUser ? (
                 <div className="flex flex-col items-center gap-2 mt-8">
-                  <img src={avatar} alt="profile" className="w-16 h-16 rounded-full border-2 border-[#aff901] object-cover" />
-                  <span className="text-black font-semibold max-w-[120px] truncate">{user.displayName || user.email}</span>
+                  <button
+                    onClick={handleProfileClick}
+                    className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+                  >
+                    <img src={avatar} alt="profile" className="w-16 h-16 rounded-full border-2 border-[#aff901] object-cover" />
+                    <span className="text-black font-semibold max-w-[120px] truncate">{currentUser.displayName || currentUser.email}</span>
+                  </button>
                   <button
                     onClick={() => { setMenuOpen(false); handleLogout(); }}
                     className="rounded-full bg-black text-[#aff901] px-6 py-2 font-semibold mt-2 hover:bg-[#aff901] hover:text-black border border-[#aff901] transition-colors"
@@ -111,6 +127,9 @@ const Header = () => {
             </nav>
           </div>
         </>
+      )}
+      {showUserProfile && (
+        <UserProfile onClose={() => setShowUserProfile(false)} />
       )}
     </header>
   );
