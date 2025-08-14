@@ -1,89 +1,113 @@
-import React, {useEffect, useState} from "react";
-import { FiEdit2, FiTrash2 } from "react-icons/fi";
-import axios from "axios";
-import tasks from "../Pages/main/Tasks.jsx";
-import TaskModal from "./TaskModal.jsx";
+import React from "react";
+import { FiEdit2, FiTrash2, FiCalendar, FiFlag } from "react-icons/fi";
 
-const TaskCard = ({refreshTasks}) => {
-  const [tasks, setTasks] = useState([]);
-  const [showModal, setShowModal] = useState(false);
-  const [editingTask, setEditingTask] = useState(null)
+const TaskCard = ({ task, onEdit, onDelete }) => {
+  if (!task) return null;
 
-    const fetchTasks = async () => {
-      try {
-        const response = await axios.get("http://localhost:3000/tasks");
-        console.log(response.data.tasks);
-        setTasks(response.data.tasks);
-      } catch (error) {
-        console.error("Error while fecthing data",error);
-      }
-    }
-  useEffect(() => {
-      fetchTasks()
-  },[])
-
-  const deleteTask = async (id) => {
-    try {
-      await axios.delete(`http://localhost:3000/tasks/${id}`);
-      setTasks(tasks.filter(t => t.id !== id));
-    }catch (error) {
-      console.error("Error deleting task:", error);
-    }
-  }
-
-
-  const openEditModal = (task) => {
-    setEditingTask(task);
-    setShowModal(true);
+  const formatDate = (dateString) => {
+    if (!dateString) return 'Not set';
+    return new Date(dateString).toLocaleDateString();
   };
 
-  const closeModal = () => {
-    setShowModal(false);
-    setEditingTask(null);
+  const getPriorityColor = (priority) => {
+    switch (priority) {
+      case 'high': return 'text-red-500';
+      case 'medium': return 'text-yellow-500';
+      case 'low': return 'text-green-500';
+      default: return 'text-gray-500';
+    }
+  };
+
+  const getStatusColor = (status) => {
+    switch (status) {
+      case 'completed': return 'text-green-500';
+      case 'in_progress': return 'text-blue-500';
+      case 'pending': return 'text-yellow-500';
+      case 'cancelled': return 'text-red-500';
+      default: return 'text-gray-500';
+    }
   };
 
   return (
+    <div className="bg-black rounded-2xl p-4 sm:p-6 flex flex-col gap-3 shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-105 focus-within:ring-2 focus-within:ring-[#aff901] focus-within:ring-offset-2 outline-none">
+      {/* Task Header */}
+      <div className="flex justify-between items-start">
+        <h2 className="text-lg sm:text-xl font-bold text-[#aff901] flex-1 pr-2">
+          {task.title}
+        </h2>
+        <div className="flex gap-2">
+          <button
+            className="p-2 rounded-full bg-[#aff901] text-black hover:opacity-80 transition"
+            onClick={() => onEdit(task)}
+            title="Edit task"
+          >
+            <FiEdit2 className="text-sm" />
+          </button>
+          <button
+            className="p-2 rounded-full bg-red-500 text-white hover:opacity-80 transition"
+            onClick={() => onDelete(task.id)}
+            title="Delete task"
+          >
+            <FiTrash2 className="text-sm" />
+          </button>
+        </div>
+      </div>
 
+      {/* Task Description */}
+      {task.description && (
+        <p className="text-white text-sm leading-relaxed">
+          {task.description}
+        </p>
+      )}
 
-<>
-  {tasks.length > 0 ? (tasks.map((task) => (
-    <div
-      className="bg-black rounded-2xl p-4 sm:p-6 flex flex-col gap-2 shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-105 focus-within:ring-2 focus-within:ring-[#aff901] focus-within:ring-offset-2 outline-none"
-    key={task.id}
-    >
+      {/* Task Details */}
+      <div className="space-y-2">
+        {/* Dates */}
+        <div className="flex items-center gap-2 text-white text-xs">
+          <FiCalendar className="text-[#aff901]" />
+          <span>Start: {formatDate(task.start_date)}</span>
+          {task.end_date && (
+            <>
+              <span>•</span>
+              <span>End: {formatDate(task.end_date)}</span>
+            </>
+          )}
+        </div>
 
-      <h2 className="text-lg sm:text-xl font-bold text-[#aff901]">{task.title}</h2>
-      <span className="text-lg sm:text-xl font-bold text-[#aff901]">{task.description}</span>
+        {/* Priority and Status */}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <FiFlag className={`text-sm ${getPriorityColor(task.priority)}`} />
+            <span className={`text-xs font-medium ${getPriorityColor(task.priority)}`}>
+              {task.priority?.charAt(0).toUpperCase() + task.priority?.slice(1)} Priority
+            </span>
+          </div>
+          <span className={`text-xs font-medium px-2 py-1 rounded-full ${getStatusColor(task.status)} bg-opacity-20`}>
+            {task.status?.replace('_', ' ').charAt(0).toUpperCase() + task.status?.replace('_', ' ').slice(1)}
+          </span>
+        </div>
 
-      <span className="text-white text-xs sm:text-sm font-medium">Status: {task.status}</span>
-      <span className="text-white text-xs sm:text-sm font-medium">Added: {task.created_at}</span>
+        {/* Created Date */}
+        {task.created_at && (
+          <div className="text-white text-xs opacity-70">
+            Created: {formatDate(task.created_at)}
+          </div>
+        )}
+      </div>
 
-
-      <div className="flex flex-wrap gap-2 mt-3 sm:mt-4">
-        <button className="px-3 py-1 rounded-full bg-[#aff901] text-black font-semibold text-xs flex items-center gap-1 transition-transform duration-150 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#aff901]"
-        onClick={() => openEditModal(task)}>
-          <FiEdit2 className="text-base" /> Edit
-        </button>
-        <button className="px-3 py-1 rounded-full bg-white text-black font-semibold text-xs border border-[#aff901] flex items-center gap-1 transition-transform duration-150 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#aff901]"
-                onClick={() => deleteTask(task.id)}
-        >
-          <FiTrash2 className="text-base" /> Delete
-        </button>
-        <TaskModal
-                  isOpen={showModal}
-                  onClose={() => setShowModal(false)}
-                  refreshTasks={fetchTasks}
-                  task={task}
-                />
+      {/* Progress Bar for Status */}
+      <div className="w-full bg-gray-700 rounded-full h-2">
+        <div
+          className={`h-2 rounded-full transition-all duration-300 ${
+            task.status === 'completed' ? 'bg-green-500 w-full' :
+            task.status === 'in_progress' ? 'bg-blue-500 w-2/3' :
+            task.status === 'pending' ? 'bg-yellow-500 w-1/3' :
+            'bg-gray-500 w-0'
+          }`}
+        ></div>
       </div>
     </div>
-  ))):(
-    <div  className="col-span-full text-center text-gray-400 py-12 text-lg">No tasks available</div>)
-      }
-  </>
   );
 };
 
 export default TaskCard;
-
-
