@@ -10,23 +10,34 @@ The backend is deployed on [**Render**](https://render.com/), and the MySQL data
 
 ## ✨ Features
 
+### Core Functionality
 - ✅ Add, edit, and delete tasks
 - 📅 Track task start and end dates
 - ⚙️ Auto-set task status (`In Progress` or `Completed`) based on end date
-- 🔐 Google Sign-In (Firebase Authentication)
-- 🧠 User profile display and logout
-- 📱 Mobile-friendly and responsive layout
-- 🎨 Custom color theme: `#aff901`, `#eaf4f4`, `#000`
-- 🌐 Backend API for task management (CRUD)
-- 🗃️ MySQL database hosted on Railway
+
+### Authentication
+- 🔐 **Google Sign-In**
+- ✉️ **Email/Password Registration & Login**
+- 🔄 **Password Reset**
+- 🛡️ Protected routes
+- 👤 User profile management
+- 🔄 Automatic redirects (login/dashboard)
+- ⏳ Loading states & error handling
+
+### Technical
+- 📱 Fully responsive design
+- 🎨 Custom color theme (`#aff901`, `#eaf4f4`, `#000`)
+- 🌐 REST API for CRUD operations
+- 🗃️ MySQL database with Railway hosting
 
 ---
 
 ## 🔐 Authentication
 
-- **Firebase Authentication**
-- Users can sign in with Google and log out from the nav bar
-- Secure routes can be added using Firebase tokens
+- Firebase Authentication
+- Users can sign in with Google or Email/Password
+- Secure routes using Firebase tokens
+- Follow the Firebase setup guide (link to detailed steps if needed)
 
 ---
 
