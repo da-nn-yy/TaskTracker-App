@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update documentation and refactor server configuration with Firebase integration">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Normalize line endings from CRLF to LF in React components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config/db.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,14 +173,7 @@
       <workItem from="1755082416124" duration="2763000" />
       <workItem from="1755085585561" duration="1092000" />
       <workItem from="1755182728406" duration="3918000" />
-    </task>
-    <task id="LOCAL-00050" summary="Refactor vite.svg to improve SVG structure and styling">
-      <option name="closed" value="true" />
-      <created>1752840879498</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1752840879498</updated>
+      <workItem from="1755242392763" duration="1113000" />
     </task>
     <task id="LOCAL-00051" summary="Fix trailing whitespace in README.md title">
       <option name="closed" value="true" />
@@ -565,14 +559,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755188394565</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Normalize line endings from CRLF to LF in React components">
+      <option name="closed" value="true" />
+      <created>1755242430953</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1755242430954</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update IDE workspace configuration with latest commit reference and file changes" />
     <MESSAGE value="Rename AddTaskModal component to TaskModal in Dashboard" />
     <MESSAGE value="Add edit task functionality and update modal component reference" />
     <MESSAGE value="Rename AddTaskModal component to TaskModal and update references" />
@@ -597,6 +598,7 @@
     <MESSAGE value="Refactor task management with Firebase authentication and enhanced user-specific operations" />
     <MESSAGE value="Add user profile management API and centralized API service layer" />
     <MESSAGE value="Update documentation and refactor server configuration with Firebase integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update documentation and refactor server configuration with Firebase integration" />
+    <MESSAGE value="Normalize line endings from CRLF to LF in React components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Normalize line endings from CRLF to LF in React components" />
   </component>
 </project>
