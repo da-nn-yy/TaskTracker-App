@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import UserProfile from "./UserProfile";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showUserProfile, setShowUserProfile] = useState(false);
   const { currentUser, logout } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
@@ -25,9 +23,9 @@ const Header = () => {
     }
   };
 
-  const handleProfileClick = () => {
-    setShowUserProfile(true);
+  const goToProfile = () => {
     setMenuOpen(false);
+    navigate("/profile");
   };
 
   return (
@@ -57,7 +55,7 @@ const Header = () => {
         {currentUser ? (
           <div className="flex items-center gap-3 ml-4">
             <button
-              onClick={handleProfileClick}
+              onClick={goToProfile}
               className="flex items-center gap-3 hover:opacity-80 transition-opacity"
             >
               <img src={avatar} alt="profile" className="w-9 h-9 rounded-full border-2 border-[#aff901] object-cover" />
@@ -102,7 +100,7 @@ const Header = () => {
               {currentUser ? (
                 <div className="flex flex-col items-center gap-2 mt-8">
                   <button
-                    onClick={handleProfileClick}
+                    onClick={goToProfile}
                     className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
                   >
                     <img src={avatar} alt="profile" className="w-16 h-16 rounded-full border-2 border-[#aff901] object-cover" />
@@ -127,9 +125,6 @@ const Header = () => {
             </nav>
           </div>
         </>
-      )}
-      {showUserProfile && (
-        <UserProfile onClose={() => setShowUserProfile(false)} />
       )}
     </header>
   );
