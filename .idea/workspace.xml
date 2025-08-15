@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Normalize line endings from CRLF to LF in React components">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Refactor Header component to use profile route navigation and enhance Dashboard with comprehensive task management features">
+      <change afterPath="$PROJECT_DIR$/frontend/src/Pages/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/TaskModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/TaskModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/UserProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/UserProfile.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,31 +175,7 @@
       <workItem from="1755082416124" duration="2763000" />
       <workItem from="1755085585561" duration="1092000" />
       <workItem from="1755182728406" duration="3918000" />
-      <workItem from="1755242392763" duration="1113000" />
-    </task>
-    <task id="LOCAL-00051" summary="Fix trailing whitespace in README.md title">
-      <option name="closed" value="true" />
-      <created>1752841301311</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1752841301311</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Add Poppins font import to Google Fonts URL in index.css">
-      <option name="closed" value="true" />
-      <created>1752842135887</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1752842135887</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Reduce TaskCard hover scale effect from 110% to 105%">
-      <option name="closed" value="true" />
-      <created>1752844064660</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1752844064660</updated>
+      <workItem from="1755242392763" duration="6378000" />
     </task>
     <task id="LOCAL-00054" summary="Refactor mobile menu layout and add border styling to Header component">
       <option name="closed" value="true" />
@@ -567,16 +545,37 @@
       <option name="project" value="LOCAL" />
       <updated>1755242430954</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Add database connection pool configuration and update IDE workspace">
+      <option name="closed" value="true" />
+      <created>1755243767162</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1755243767162</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Add profile route to main application routing">
+      <option name="closed" value="true" />
+      <created>1755247154138</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1755247154138</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Refactor Header component to use profile route navigation and enhance Dashboard with comprehensive task management features">
+      <option name="closed" value="true" />
+      <created>1755247173707</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1755247173707</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Rename AddTaskModal component to TaskModal in Dashboard" />
-    <MESSAGE value="Add edit task functionality and update modal component reference" />
-    <MESSAGE value="Rename AddTaskModal component to TaskModal and update references" />
     <MESSAGE value="Fix button text and remove key prop from TaskCard component" />
     <MESSAGE value="Refactor Dashboard to fetch tasks from backend API and simplify component structure" />
     <MESSAGE value="Refactor TaskCard to use TaskModal for editing tasks and improve modal state management" />
@@ -599,6 +598,9 @@
     <MESSAGE value="Add user profile management API and centralized API service layer" />
     <MESSAGE value="Update documentation and refactor server configuration with Firebase integration" />
     <MESSAGE value="Normalize line endings from CRLF to LF in React components" />
-    <option name="LAST_COMMIT_MESSAGE" value="Normalize line endings from CRLF to LF in React components" />
+    <MESSAGE value="Add database connection pool configuration and update IDE workspace" />
+    <MESSAGE value="Add profile route to main application routing" />
+    <MESSAGE value="Refactor Header component to use profile route navigation and enhance Dashboard with comprehensive task management features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor Header component to use profile route navigation and enhance Dashboard with comprehensive task management features" />
   </component>
 </project>
