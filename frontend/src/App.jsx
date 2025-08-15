@@ -6,6 +6,7 @@ import Dashboard from "./Pages/main/Dashboard.jsx";
 import Tasks from "./Pages/main/Tasks.jsx";
 import ProtectedRoute from "./Components/ProtectedRoute.jsx";
 import { AuthProvider } from "./contexts/AuthContext.jsx";
+import Profile from "./Pages/Profile.jsx";
 
 function App() {
   return (
@@ -27,6 +28,11 @@ function App() {
           <Route path="/addtask" element={
             <ProtectedRoute>
               <h1>Add Task Page</h1>
+            </ProtectedRoute>
+          } />
+          <Route path="/profile" element={
+            <ProtectedRoute>
+              <Profile />
             </ProtectedRoute>
           } />
           <Route path="*" element={<h1>404 Not Found</h1>} />
