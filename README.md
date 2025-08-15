@@ -47,9 +47,9 @@ The backend is deployed on [**Render**](https://render.com/), and the MySQL data
 ## 🖼️ Screenshots
 
 <p align="center">
-  <img src="./frontend/public/Screenshot 2025-07-18 120843.png" alt="Dashboard" width="200"/>
-  <img src="./frontend/public/Screenshot 2025-07-18 120937.png" alt="Tasks" width="300"/>
-  <img src="./frontend/public/Screenshot 2025-07-18 121032.png" alt="Add Task" width="600"/>
+  <img src="./frontend/public/Screenshot%202025-08-15%20120945.png" alt="Dashboard" width="200"/>
+  <img src="./frontend/public/Screenshot%202025-08-15%20120912.png" alt="Tasks" width="300"/>
+  <img src="./frontend/public/Screenshot%202025-08-15%20121010.png" alt="Add Task" width="600"/>
 </p>
 
 ---
