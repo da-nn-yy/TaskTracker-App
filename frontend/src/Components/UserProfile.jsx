@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
+import {useNavigate} from "react-router-dom";
 
 const UserProfile = ({ onClose }) => {
   const { currentUser, updateUserProfile } = useAuth();
@@ -7,6 +8,7 @@ const UserProfile = ({ onClose }) => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,7 +25,7 @@ const UserProfile = ({ onClose }) => {
       await updateUserProfile({ displayName: displayName.trim() });
       setMessage('Profile updated successfully!');
       setTimeout(() => {
-        onClose();
+        navigate('/');
       }, 1500);
     } catch (error) {
       setError('Failed to update profile. Please try again.');
@@ -32,13 +34,22 @@ const UserProfile = ({ onClose }) => {
     }
   };
 
+  const handleCancel = () => {
+    navigate('/');
+  }
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div>
+        <div className="bg-[#aff901] h-70 w-70 rounded-full absolute -z-1 blur-[90px] animate-pulse max-md:hidden top-20 left-0" />
+        <div className="bg-[#aff901] h-70 w-70 rounded-full absolute -z-1 blur-[90px] animate-pulse max-md:hidden top-60 -right-[150px]" />
+        <div className="bg-[#aff901] h-70 w-70 rounded-full absolute -z-1 blur-[90px] animate-pulse max-md:hidden -bottom-50 left-[300px]" />
+      </div>
       <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-lg font-semibold text-gray-900">User Profile</h3>
           <button
-            onClick={onClose}
+            onClick={handleCancel}
             className="text-gray-400 hover:text-gray-600"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,7 +104,7 @@ const UserProfile = ({ onClose }) => {
             </button>
             <button
               type="button"
-              onClick={onClose}
+              onClick={handleCancel}
               className="flex-1 bg-gray-300 text-gray-700 py-2 px-4 rounded-md font-medium hover:bg-gray-400 transition-colors"
             >
               Cancel

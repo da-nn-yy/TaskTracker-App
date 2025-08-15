@@ -114,7 +114,7 @@ const TaskModal = ({ task, isOpen, onClose, refreshTasks }) => {
             <textarea
               id="task-description"
               placeholder="Enter task description"
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white resize-none"
+              className="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-2xl border border-[#aff901] focus:outline-none focus:ring-2 focus:ring-[#aff901] text-black bg-white resize-none"
               value={description}
               onChange={e => setDescription(e.target.value)}
               rows="3"
