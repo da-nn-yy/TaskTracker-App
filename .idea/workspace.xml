@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Refactor authentication to use AuthContext and add user profile functionality">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update documentation and refactor server configuration with Firebase integration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/controllers/taskController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/taskController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/routes/taskRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/taskRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,47 +171,7 @@
       <workItem from="1755079108594" duration="251000" />
       <workItem from="1755082416124" duration="2763000" />
       <workItem from="1755085585561" duration="1092000" />
-      <workItem from="1755182728406" duration="2250000" />
-    </task>
-    <task id="LOCAL-00045" summary="Add new screenshot images to README documentation">
-      <option name="closed" value="true" />
-      <created>1752838688475</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1752838688475</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Simplify README by removing setup instructions and keeping core project information">
-      <option name="closed" value="true" />
-      <created>1752838933207</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1752838933207</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Adjust screenshot widths in README for better visual balance">
-      <option name="closed" value="true" />
-      <created>1752839184186</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1752839184186</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Update README to mention built-in authentication option alongside Google Sign-In">
-      <option name="closed" value="true" />
-      <created>1752839597638</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1752839597638</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Update vite.svg with new SVG structure and styling">
-      <option name="closed" value="true" />
-      <created>1752840709680</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1752840709680</updated>
+      <workItem from="1755182728406" duration="3918000" />
     </task>
     <task id="LOCAL-00050" summary="Refactor vite.svg to improve SVG structure and styling">
       <option name="closed" value="true" />
@@ -572,18 +525,53 @@
       <option name="project" value="LOCAL" />
       <updated>1755187259193</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Update documentation and refactor server configuration with Firebase integration">
+      <option name="closed" value="true" />
+      <created>1755188248635</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1755188248636</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Enhance task management with comprehensive form fields and improved UI components">
+      <option name="closed" value="true" />
+      <created>1755188263170</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1755188263170</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Refactor task management with Firebase authentication and enhanced user-specific operations">
+      <option name="closed" value="true" />
+      <created>1755188314335</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1755188314335</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Add user profile management API and centralized API service layer">
+      <option name="closed" value="true" />
+      <created>1755188378657</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1755188378657</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Update documentation and refactor server configuration with Firebase integration">
+      <option name="closed" value="true" />
+      <created>1755188394565</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1755188394565</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update getTasks response to wrap tasks array in object structure" />
-    <MESSAGE value="Add Prettier configuration for automatic code formatting" />
-    <MESSAGE value="Remove task fetching logic from App component and clean up imports" />
-    <MESSAGE value="Fix state variable naming and add delete functionality to TaskCard component" />
-    <MESSAGE value="Refactor Tasks component to remove local state and integrate TaskCard with proper styling" />
     <MESSAGE value="Update IDE workspace configuration with latest commit reference and file changes" />
     <MESSAGE value="Rename AddTaskModal component to TaskModal in Dashboard" />
     <MESSAGE value="Add edit task functionality and update modal component reference" />
@@ -604,6 +592,11 @@
     <MESSAGE value="Add JWT authentication middleware to protect task routes" />
     <MESSAGE value="Rename register endpoint to signup and update function name" />
     <MESSAGE value="Refactor authentication to use AuthContext and add user profile functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor authentication to use AuthContext and add user profile functionality" />
+    <MESSAGE value="Enhance task management with comprehensive form fields and improved UI components" />
+    <MESSAGE value="Refactor task controller to use Firebase authentication and enhance task management with user-specific operations" />
+    <MESSAGE value="Refactor task management with Firebase authentication and enhanced user-specific operations" />
+    <MESSAGE value="Add user profile management API and centralized API service layer" />
+    <MESSAGE value="Update documentation and refactor server configuration with Firebase integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update documentation and refactor server configuration with Firebase integration" />
   </component>
 </project>
