@@ -6,6 +6,42 @@ body {
   font-family:"Poppins", serif;
   background-color: #eaf4f4;
 }
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSoft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.rise-in {
+  opacity: 0;
+  animation: riseIn 0.7s ease forwards;
+}
+
+.float-soft {
+  animation: floatSoft 7s ease-in-out infinite;
+}
+
+.float-soft-delayed {
+  animation: floatSoft 9s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
 @utility container {
   @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4
 }

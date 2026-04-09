@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Update README screenshots with new file paths and normalize line endings">
+    <list default="true" id="83532cdf-104e-4b54-90d1-de2b8bda4392" name="Changes" comment="Remove database schema file and update IDE workspace configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/main/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/main/Dashboard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,7 @@
     &quot;JavaScript Debug.localhost:5173.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/Desktop/InternProjects/task-tracker-app/frontend/public&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -178,15 +178,11 @@
       <workItem from="1755242392763" duration="7629000" />
       <workItem from="1755256981312" duration="4000" />
       <workItem from="1755262127942" duration="1147000" />
-      <workItem from="1755263358974" duration="817000" />
-    </task>
-    <task id="LOCAL-00059" summary="Remove backend documentation section from README">
-      <option name="closed" value="true" />
-      <created>1754038870366</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1754038870366</updated>
+      <workItem from="1755263358974" duration="1654000" />
+      <workItem from="1755681102648" duration="87000" />
+      <workItem from="1755681209373" duration="100000" />
+      <workItem from="1755756485775" duration="1331000" />
+      <workItem from="1766993197398" duration="377000" />
     </task>
     <task id="LOCAL-00060" summary="Update server response message to include API endpoint information">
       <option name="closed" value="true" />
@@ -572,15 +568,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755250209009</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="Remove database schema file and update IDE workspace configuration">
+      <option name="closed" value="true" />
+      <created>1755264464103</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1755264464104</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add description input field and improve TaskModal props handling" />
-    <MESSAGE value="Refactor Tasks component to simplify modal handling and fix prop passing" />
     <MESSAGE value="Fix TaskModal prop handling and add refreshTasks prop to TaskCard" />
     <MESSAGE value="Remove commented code and clean up TaskCard component" />
     <MESSAGE value="Refactor Dashboard component to use useCallback for fetchTasks and improve task grid layout" />
@@ -604,6 +606,8 @@
     <MESSAGE value="Update TaskModal textarea styling and enhance UserProfile with navigation and animated background" />
     <MESSAGE value="Add Profile page component with animated background and UserProfile integration" />
     <MESSAGE value="Update README screenshots with new file paths and normalize line endings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README screenshots with new file paths and normalize line endings" />
+    <MESSAGE value="Update CORS configuration for production deployment and remove database schema file" />
+    <MESSAGE value="Remove database schema file and update IDE workspace configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove database schema file and update IDE workspace configuration" />
   </component>
 </project>

@@ -2,6 +2,7 @@
 import Header from "./Components/Header.jsx";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from "./Pages/login.jsx";
+import Landing from "./Pages/Landing.jsx";
 import Dashboard from "./Pages/main/Dashboard.jsx";
 import Tasks from "./Pages/main/Tasks.jsx";
 import ProtectedRoute from "./Components/ProtectedRoute.jsx";
@@ -14,8 +15,10 @@ function App() {
       <Router>
         <Header />
         <Routes>
+          <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={
+          <Route path="/register" element={<Login initialMode="signup" />} />
+          <Route path="/dashboard" element={
             <ProtectedRoute>
               <Dashboard />
             </ProtectedRoute>
