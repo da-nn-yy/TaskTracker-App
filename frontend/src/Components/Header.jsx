@@ -7,10 +7,13 @@ const Header = () => {
   const { currentUser, logout } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
-  const navLinks = [
-    { to: "/", label: "Dashboard" },
-    { to: "/tasks", label: "Tasks" },
-  ];
+  const isAuthPage = location.pathname === "/login" || location.pathname === "/register";
+  const navLinks = currentUser
+    ? [
+        { to: "/dashboard", label: "Dashboard" },
+        { to: "/tasks", label: "Tasks" },
+      ]
+    : [{ to: "/", label: "Home" }];
 
   const avatar = currentUser?.photoURL || "https://ui-avatars.com/api/?name=" + (currentUser?.displayName || "U") + "&background=aff901&color=000";
 
@@ -68,14 +71,14 @@ const Header = () => {
               Log Out
             </button>
           </div>
-        ) : (
+        ) : !isAuthPage ? (
           <Link
             to="/login"
             className="rounded-full bg-[#aff901] text-black px-5 py-2 font-semibold hover:opacity-90 transition-opacity ml-4"
           >
             Login
           </Link>
-        )}
+        ) : null}
       </nav>
       {/* Mobile Drawer Nav & Overlay */}
       {menuOpen && (
@@ -113,7 +116,7 @@ const Header = () => {
                     Log Out
                   </button>
                 </div>
-              ) : (
+              ) : !isAuthPage ? (
                 <Link
                   to="/login"
                   className="rounded-full bg-[#aff901] text-black px-8 py-3 font-semibold text-xl hover:opacity-90 transition-opacity mt-8"
@@ -121,7 +124,7 @@ const Header = () => {
                 >
                   Login
                 </Link>
-              )}
+              ) : null}
             </nav>
           </div>
         </>

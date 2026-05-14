@@ -15,6 +15,21 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
+const requiredFirebaseKeys = [
+  'apiKey',
+  'authDomain',
+  'projectId',
+  'appId',
+];
+
+const missingFirebaseKeys = requiredFirebaseKeys.filter((key) => !firebaseConfig[key]);
+
+if (missingFirebaseKeys.length > 0) {
+  throw new Error(
+    `Missing Firebase configuration. Set the following VITE_FIREBASE_* variables before building the app: ${missingFirebaseKeys.join(', ')}`,
+  );
+}
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
