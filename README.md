@@ -39,6 +39,21 @@ The backend is deployed on [**Render**](https://render.com/), and the MySQL data
 - Secure routes using Firebase tokens
 - Follow the Firebase setup guide (link to detailed steps if needed)
 
+### Required Environment Variables
+
+Backend:
+
+- `FRONTEND_ORIGINS` or `FRONTEND_URL` should include every deployed frontend origin, separated by commas if needed
+
+Frontend:
+
+- `VITE_API_BASE_URL`
+- `VITE_FIREBASE_API_KEY`
+- `VITE_FIREBASE_AUTH_DOMAIN`
+- `VITE_FIREBASE_PROJECT_ID`
+- `VITE_FIREBASE_APP_ID`
+- `VITE_FIREBASE_STORAGE_BUCKET` and `VITE_FIREBASE_MESSAGING_SENDER_ID` if your Firebase project uses them
+
 ---
 
 ## ⚙️ Tech Stack
@@ -65,7 +80,7 @@ The backend is deployed on [**Render**](https://render.com/), and the MySQL data
 
 ---
 
-## 📦 Deployment Links 
+## 📦 Deployment Links
 
 - 🔗 Frontend: Comingsoon
 - 🔗 Backend (Render): Commingsoon
