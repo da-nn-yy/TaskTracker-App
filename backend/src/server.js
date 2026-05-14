@@ -8,13 +8,27 @@ dotenv.config();
 
 const app = express();
 
+const allowedOrigins = (process.env.FRONTEND_ORIGINS || process.env.FRONTEND_URL || 'http://localhost:5173,http://localhost:5174')
+  .split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
+const corsOptions = {
+  origin(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+
+    return callback(new Error(`CORS blocked for origin: ${origin}`));
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true,
+};
+
 // Middleware
 app.use(express.json());
-app.use(cors({
-  origin: 'http://localhost:5173',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
-}));
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 // API Routes
 app.use('/api/tasks', taskRoutes);
@@ -65,7 +79,7 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server is running on port ${PORT}`);
-  console.log(`📱 Frontend URL: http://localhost:5173`);
+  console.log(`📱 Allowed frontend origins: ${allowedOrigins.join(', ')}`);
   console.log(`🔐 Backend URL: http://localhost:${PORT}`);
   console.log(`✅ Health check: http://localhost:${PORT}/`);
   console.log(`🧪 Test endpoint: http://localhost:${PORT}/test`);
