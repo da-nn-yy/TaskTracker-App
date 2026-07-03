@@ -3,6 +3,8 @@ import  dotenv from 'dotenv';
 dotenv.config();
 
 const resolvedPort = Number(
+  process.env.RENDER_DB_PORT ||
+  process.env.RENDER_MYSQL_PORT ||
   process.env.RLWY_DB_PORT ||
   process.env.DB_PORT ||
   process.env.MYSQLPORT ||

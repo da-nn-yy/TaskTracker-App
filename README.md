@@ -2,7 +2,7 @@
 
 A modern, responsive Task Tracker web application built using **React**, **Tailwind CSS**, **Firebase Authentication**, and **Vite**, with a **Node.js + Express** backend and **MySQL** database.
 
-The backend is deployed on [**Render**](https://render.com/), and the MySQL database is hosted on [**Railway**](https://railway.app/).
+The backend and MySQL database can be deployed on [**Render**](https://render.com/).
 
 > ⚠️ This project is still in progress and not yet fully functional.
 
@@ -28,7 +28,7 @@ The backend is deployed on [**Render**](https://render.com/), and the MySQL data
 - 📱 Fully responsive design
 - 🎨 Custom color theme (`#aff901`, `#eaf4f4`, `#000`)
 - 🌐 REST API for CRUD operations
-- 🗃️ MySQL database with Railway hosting
+- 🗃️ MySQL database ready for Render hosting
 
 ---
 
@@ -44,6 +44,8 @@ The backend is deployed on [**Render**](https://render.com/), and the MySQL data
 Backend:
 
 - `FRONTEND_ORIGINS` or `FRONTEND_URL` should include every deployed frontend origin, separated by commas if needed
+- Database variables: `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASS`
+- Firebase Admin variables: `FIREBASE_PROJECT_ID`, `FIREBASE_PRIVATE_KEY`, `FIREBASE_CLIENT_EMAIL`, plus optional related keys
 
 Frontend:
 
@@ -65,7 +67,6 @@ Frontend:
 - [Node.js](https://nodejs.org/)
 - [Express.js](https://expressjs.com/)
 - [MySQL](https://www.mysql.com/)
-- [Railway](https://railway.app/)
 - [Render](https://render.com/)
 
 ---
@@ -84,6 +85,22 @@ Frontend:
 
 - 🔗 Frontend: Comingsoon
 - 🔗 Backend (Render): Commingsoon
+
+---
+
+## 🚀 Render Deployment (Backend + MySQL)
+
+1. Create a **MySQL** service on Render and copy host, port, database, user, and password.
+2. Create a **Web Service** on Render from `backend/`.
+3. Use build command `npm install` and start command `npm start`.
+4. Add backend environment variables from `backend/.env.example` in the Render dashboard.
+5. Deploy frontend (Render Static Site or Vercel) and set `VITE_API_BASE_URL` to backend URL.
+6. Set `FRONTEND_ORIGINS` on backend to all deployed frontend domains.
+
+Example:
+
+- `VITE_API_BASE_URL=https://your-backend.onrender.com`
+- `FRONTEND_ORIGINS=https://your-frontend.onrender.com,https://your-frontend.vercel.app`
 
 ---
 
